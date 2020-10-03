@@ -31,3 +31,6 @@ Route::get('/contact_us', function() {
 
 //Route::post('/contact_us', 'ContactUsController@save');
 Route::post('/contact_us', 'App\Http\Controllers\ContactUsController@save');
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');

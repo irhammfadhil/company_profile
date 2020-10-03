@@ -120,7 +120,7 @@
                                         <h2>Menu</h2>
                                     </header>
                                     <ul>
-                                        <li><a href="/"><b>Homepage</b></a></li>
+                                        <li><a href="/"><b>Dashboardpage</b></a></li>
                                         <li><a href="/about_us">About Us</a></li>
                                         <li><a href="/product">Our Products</a></li>
                                         <li><a href="/contact_us">Contact Us</a></li>
