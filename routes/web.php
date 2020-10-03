@@ -34,3 +34,7 @@ Route::post('/contact_us', 'App\Http\Controllers\ContactUsController@save');
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::get('/contact_us_list', 'App\Http\Controllers\InquiryListController@getAllInquiries');
+
+Route::post('/contact_us_list/done/{id}', 'App\Http\Controllers\InquiryListController@markAsDone');
