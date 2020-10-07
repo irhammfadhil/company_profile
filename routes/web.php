@@ -21,9 +21,7 @@ Route::get('/about_us', function() {
 	return view('about');
 });
 
-Route::get('/product', function() {
-	return view('product');
-});
+Route::get('/product', 'App\Http\Controllers\ProductController@viewProduct');
 
 Route::get('/contact_us', function() {
 	return view('contact');
@@ -38,3 +36,9 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::get('/contact_us_list', 'App\Http\Controllers\InquiryListController@getAllInquiries');
 
 Route::post('/contact_us_list/done/{id}', 'App\Http\Controllers\InquiryListController@markAsDone');
+
+Route::get('/contact_us_list/session', 'App\Http\Controllers\InquiryListController@checkSession');
+
+Route::get('/product_list', 'App\Http\Controllers\ProductController@upload');
+
+Route::post('/product_list/proses', 'App\Http\Controllers\ProductController@proses');

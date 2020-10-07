@@ -10,6 +10,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body class="is-preload">
 
@@ -33,7 +34,14 @@
                                 </header>
                             <br>
                             <h2 style="text-align: center;">Contact Us</h2>
-
+                            <br>
+                            @if(count($errors) > 0)
+                            <div class="alert alert-danger">
+                                @foreach ($errors->all() as $error)
+                                {{ $error }} <br/>
+                                @endforeach
+                            </div>
+                            @endif
                             <!-- Form -->
                                                     <form method="post" action="/contact_us">
                                                         {{ csrf_field() }}

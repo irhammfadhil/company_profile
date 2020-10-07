@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 class InquiryListController extends Controller
 {
     public function getAllInquiries() {
+        #$data = 'abc'
     	$inquiry = DB::table('contact_us') -> get();
     	return view('contact_us_list', ['inquiry' => $inquiry]);
     }
@@ -17,4 +18,8 @@ class InquiryListController extends Controller
 		]);
 		return redirect('/contact_us_list');
     }
+    public function checkSession(Request $request) {
+        $data = $request->session()->get('user_agent');
+        echo $data;
+    } 
 }

@@ -8,6 +8,12 @@ use Illuminate\Support\Facades\DB;
 class ContactUsController extends Controller
 {
     public function save (Request $request) {
+        $this->validate($request, [
+            'name' => 'required',
+            'email' => 'required',
+            'phone_number' => 'required',
+            'message' => 'required',
+        ]);
     	DB::table('contact_us')->insert([
     		'contact_us_name' => $request->name,
     		'contact_us_email' => $request->email,

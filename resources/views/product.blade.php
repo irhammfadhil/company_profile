@@ -37,54 +37,16 @@
                         <!-- Section -->
                                 <section>
                                     <div class="posts">
+                                        @foreach($product as $p)
                                         <article>
-                                            <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-                                            <h3>Copper Sulphate Crystal</h3>
-                                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                                            <a href="#" class="image"><img src="{{$p->product_img}}" alt="" /></a>
+                                            <h3>{{$p->product_name}}</h3>
+                                            <p>{{$p->product_desc}}</p>
                                             <ul class="actions">
-                                                <li><a href="#" class="button">Download Technical Spec</a></li>
+                                                <li><a href="{{$p->product_technical_spec}}" class="button">Download Technical Spec</a></li>
                                             </ul>
                                         </article>
-                                        <article>
-                                            <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-                                            <h3>Copper Sulphate Powder</h3>
-                                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                                            <ul class="actions">
-                                                <li><a href="#" class="button">Download Technical Spec</a></li>
-                                            </ul>
-                                        </article>
-                                        <article>
-                                            <a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-                                            <h3>Tempus ullamcorper</h3>
-                                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                                            <ul class="actions">
-                                                <li><a href="#" class="button">More</a></li>
-                                            </ul>
-                                        </article>
-                                        <article>
-                                            <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-                                            <h3>Sed etiam facilis</h3>
-                                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                                            <ul class="actions">
-                                                <li><a href="#" class="button">More</a></li>
-                                            </ul>
-                                        </article>
-                                        <article>
-                                            <a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-                                            <h3>Feugiat lorem aenean</h3>
-                                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                                            <ul class="actions">
-                                                <li><a href="#" class="button">More</a></li>
-                                            </ul>
-                                        </article>
-                                        <article>
-                                            <a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-                                            <h3>Amet varius aliquam</h3>
-                                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                                            <ul class="actions">
-                                                <li><a href="#" class="button">More</a></li>
-                                            </ul>
-                                        </article>
+                                        @endforeach
                                     </div>
                                 </section>
                         </div>
