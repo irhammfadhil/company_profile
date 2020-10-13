@@ -9,7 +9,7 @@ class InquiryListController extends Controller
 {
     public function getAllInquiries() {
         #$data = 'abc'
-    	$inquiry = DB::table('contact_us') -> get();
+    	$inquiry = DB::table('contact_us')->paginate(10);
     	return view('contact_us_list', ['inquiry' => $inquiry]);
     }
     public function markAsDone($id) {
