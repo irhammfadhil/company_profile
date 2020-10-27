@@ -15,6 +15,7 @@
             <div class="col-lg-12">
                 @if(Session::has('message'))
                 <div class="alert alert-danger">
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
                     {{Session::get('message')}}
                 </div>
                 @endif
