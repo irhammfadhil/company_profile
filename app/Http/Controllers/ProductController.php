@@ -17,6 +17,7 @@ class ProductController extends Controller
     		'image' => 'required|image',
     		'link' => 'required',
     	]);
+    	#check produck is exists or not
     	$product = DB::table('products')->select('product_name')->where('product_name', $request->name)->value('product');
     	if(!empty($product)) {
     		return redirect('/product_list')->withMessage('Product exists!');
