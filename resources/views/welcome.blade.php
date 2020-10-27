@@ -9,54 +9,8 @@
         <title>Editorial by HTML5 UP</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="assets/css/main.css" />
-        <style type="text/css">
-            #slider {
-                overflow: hidden;
-            }
-            #slider figure {
-                position: relative;
-                width: 100%;
-                height: 100%
-                margin: 0;
-                left: 0;
-                animation: 20s slider infinite;
-            }
-            #slider figure img {
-                float: left;
-                object-fit: contain
-            }
-
-            @keyframes slider {
-                0% {
-                    left: 0;
-                }
-                20% {
-                    left: 0;
-                }
-                25% {
-                    left: -100%;
-                }
-                45% {
-                    left: -100%;
-                }
-                50% {
-                    left: -200%;
-                }
-                70% {
-                    left: -200%;
-                }
-                75% {
-                    left: -300%;
-                }
-                95% {
-                    left: -300%;
-                }
-                100% {
-                    left: -400%;
-                }
-            }
-        </style>
     </head>
     <body class="is-preload">
 
@@ -90,15 +44,35 @@
                                             <li><a href="/about_us" class="button big">Learn More</a></li>
                                         </ul>
                                     </div>
-                                    <span class="image object">
-                                        <div id="slider">
-                                            <figure>
-                                                <img src="images/chem.jpg" alt=""/>
-                                                <img src="images/pic01.jpg" alt=""/>
-                                                <img src="images/pic02.jpg" alt=""/>
-                                            </figure>
-                                        </div>
-                                    </span>
+                                    <div class="w3-content w3-display-container">
+                                      <img class="mySlides" src="images/pic01.jpg" style="width:100%">
+                                      <img class="mySlides" src="images/pic02.jpg" style="width:100%">
+                                      <img class="mySlides" src="images/pic03.jpg" style="width:100%">
+                                      <img class="mySlides" src="images/pic04.jpg" style="width:100%">
+
+                                      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                                      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                                    </div>
+
+                                    <script>
+                                    var slideIndex = 1;
+                                    showDivs(slideIndex);
+
+                                    function plusDivs(n) {
+                                      showDivs(slideIndex += n);
+                                    }
+
+                                    function showDivs(n) {
+                                      var i;
+                                      var x = document.getElementsByClassName("mySlides");
+                                      if (n > x.length) {slideIndex = 1}
+                                      if (n < 1) {slideIndex = x.length}
+                                      for (i = 0; i < x.length; i++) {
+                                        x[i].style.display = "none";  
+                                      }
+                                      x[slideIndex-1].style.display = "block";  
+                                    }
+                                    </script>
                                 </section>
                         </div>
                     </div>

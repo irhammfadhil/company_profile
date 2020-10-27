@@ -39,6 +39,14 @@ Route::post('/contact_us_list/done/{id}', 'App\Http\Controllers\InquiryListContr
 
 Route::get('/contact_us_list/session', 'App\Http\Controllers\InquiryListController@checkSession');
 
-Route::get('/product_list', 'App\Http\Controllers\ProductController@upload');
+Route::get('/product_list/add', 'App\Http\Controllers\ProductController@upload');
 
 Route::post('/product_list/proses', 'App\Http\Controllers\ProductController@proses');
+
+Route::get('/product_list', 'App\Http\Controllers\ProductController@viewProductAdmin');
+
+Route::get('/product_list/edit/{id}', 'App\Http\Controllers\ProductController@edit');
+
+Route::post('/product_list/edit/proses/{id}', 'App\Http\Controllers\ProductController@updateProduct');
+
+Route::get('/product_list/delete/{id}', 'App\Http\Controllers\ProductController@deleteProduct');
