@@ -19,14 +19,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">PT. IRHAMINDO LAKSONO</a>
+          <a class="navbar-brand" href="/dashboard">PT. IRHAMINDO LAKSONO</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Product List <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Inquiry List</a></li>
+            <li><a href="/contact_us_list">Inquiry List</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
@@ -43,7 +43,7 @@
       </div><!-- /.container-fluid -->
     </nav>
     <div class="container">
-        <h1 style="text-align: center;">Inquiry List</h1>
+        <h1 style="text-align: center;">Product List</h1>
         <div class="row">
             <div class="col-lg-12">
                 @if(Session::has('message'))
@@ -61,6 +61,7 @@
                         <th scope="col">Name</th>
                         <th scope="col">Description</th>
                         <th scope="col">Image</th>
+                        <th scope="col">Price</th>
                         <th scope="col">Technical Spec link</th>
                         <th scope="col">Action</th>
                       </tr>
@@ -71,6 +72,7 @@
                         <td>{{$p->product_name}}</td>
                         <td>{{$p->product_desc}}</td>
                         <td><img style="width:200px;height:200px;" src="{{$p->product_img}}"></td>
+                        <td>{{$p->product_price}}</td>
                         <td><a href="{{$p->product_technical_spec}}">{{$p->product_technical_spec}}</a></td>
                         <td><a class="btn btn-warning" href="product_list/edit/{{$p->product_id}}" role="button">Edit</a>
                         <br><br>

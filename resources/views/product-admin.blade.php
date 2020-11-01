@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tutorial Laravel #30 : Membuat Upload File Dengan Laravel</title>
+	<title>Add New Product</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
  
 </head>
@@ -38,10 +38,15 @@
 					</div>
 
 					<div class="form-group">
+						<b>Harga</b><br/>
+						<input type="text" class="form-control" name="price" id="price" value="" placeholder="Harga barang" />
+					</div>
+
+					<div class="form-group">
 						<b>Link Technical Spec</b>
 						<input type="text" class="form-control" name="link" id="link" value="" placeholder="Link Technical Spec" />
 					</div>
-					<input type="submit" value="Upload" class="btn btn-primary">
+					<input type="submit" value="Add This Product!" class="btn btn-primary">
 				</form>
 			</div>
 		</div>

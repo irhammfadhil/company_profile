@@ -39,9 +39,10 @@
                                     <div class="posts">
                                         @foreach($product as $p)
                                         <article>
-                                            <a href="#" class="image"><img src="{{$p->product_img}}" alt="" /></a>
+                                            <a href="#" class="image"><img style="width:400px;height:400px;" src="{{$p->product_img}}" alt="" /></a>
                                             <h3>{{$p->product_name}}</h3>
                                             <p>{{$p->product_desc}}</p>
+                                            <p><b style="font-size: 24px;">Rp{{$p->product_price}}</b></p>
                                             <ul class="actions">
                                                 <li><a href="{{$p->product_technical_spec}}" class="button">Download Technical Spec</a></li>
                                             </ul>
