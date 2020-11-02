@@ -50,3 +50,7 @@ Route::get('/product_list/edit/{id}', 'App\Http\Controllers\ProductController@ed
 Route::post('/product_list/edit/proses/{id}', 'App\Http\Controllers\ProductController@updateProduct');
 
 Route::get('/product_list/delete/{id}', 'App\Http\Controllers\ProductController@deleteProduct');
+
+Route::get('/dashboards', function () {
+    return view('admin-dashboard');
+});

@@ -54,18 +54,20 @@ class ProductController extends Controller
     	return view('product-admin-edit', ['product' => $product]);
     }
 
-    public function updateProduct(Request $request, $id) {
+    public function updateProduct(Request $request, $id/*, $nama_asal*/) {
+        //$base_name = $nama_asal;
         $product = DB::table('products')->select('product_name')->where('product_name', $request->name)->value('product');
-        if(!empty($product)) {
+        /*if(!empty($product) && strcmp($request->name, $base_name) != 0) {
             return redirect('/product_list')->withMessage('Product exists!');
         }
-        else {
+        else {*/
             $file = $request->file('image');
             $tujuan_upload = 'data_file';
             if (is_null($file)) {
                 DB::table('products')->where('product_id',$id)->update([
                 'product_name' => $request->name,
                 'product_desc' => $request->keterangan,
+                'product_price' => $request->price,
                 'product_technical_spec' => $request->link,
                 ]);
             }
@@ -76,11 +78,12 @@ class ProductController extends Controller
                 'product_name' => $request->name,
                 'product_desc' => $request->keterangan,
                 'product_img' => $directory,
+                'product_price' => $request->price,
                 'product_technical_spec' => $request->link,
                 ]);
             }
-            return redirect('/product_list');
-        }
+            return redirect('/product_list')->withMessage('Data successfully updated!');
+        //}
     }
     public function deleteProduct($id) {
     	DB::table('products')->where('product_id',$id)->delete();

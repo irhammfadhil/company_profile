@@ -19,7 +19,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/dashboard">PT. IRHAMINDO LAKSONO</a>
+          <a class="navbar-brand" href="/dashboards">PT. IRHAMINDO LAKSONO</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -47,10 +47,18 @@
         <div class="row">
             <div class="col-lg-12">
                 @if(Session::has('message'))
-                <div class="alert alert-danger">
+                  @if(Session::get('message') == 'Product exists!')
+                  <div class="alert alert-danger">
+                      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                      {{Session::get('message')}}
+                  </div>
+                  @elseif(Session::get('message') == 'Data successfully updated!')
+                  <div class="alert alert-success" role="alert">
                     <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                    {{Session::get('message')}}
-                </div>
+                      {{Session::get('message')}}
+                  </div>
+                  @endif
+                  
                 @endif
                 <a style="position: absolute; right: 0;" class="btn btn-primary" href="product_list/add" role="button">Add New Products</a>
                 <br>

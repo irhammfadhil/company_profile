@@ -19,7 +19,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/dashboard">PT. IRHAMINDO LAKSONO</a>
+          <a class="navbar-brand" href="/dashboards">PT. IRHAMINDO LAKSONO</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->

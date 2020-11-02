@@ -33,7 +33,7 @@
                                     </ul>
                                 </header>
                                 <br>
-                                <h1 style="text-align:center;">Welcome to</h1>
+                                <h2 style="text-align:center;">Welcome to</h1>
                                 <h1 style="text-align:center;"> PT. IRHAMINDO LAKSONO</h1>
                                 <h2 style="text-align:center; font-size: 30px;">Your Reliable Chemical Partner </h2>
                             <!-- Banner -->
@@ -108,8 +108,8 @@
                                     </header>
                                     <ul class="contact">
                                         <li class="icon solid fa-envelope"><a href="#">irhamindo.laksono@gmail.com</a></li>
-                                        <li class="icon solid fa-phone">+62 21 8240 9517</li>
                                         <li class="icon solid fa-phone">+62 811 890 135</li>
+                                        <li class="icon solid fa-phone">+62 21 8240 9517</li>
                                         <li class="icon solid fa-home">1234 Somewhere Road #8254<br />
                                         Nashville, TN 00000-0000</li>
                                     </ul>

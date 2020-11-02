@@ -40,6 +40,11 @@
 					</div>
 
 					<div class="form-group">
+						<b>Harga</b><br/>
+						<input type="text" class="form-control" name="price" id="price" value="" placeholder="Harga barang" />
+					</div>
+
+					<div class="form-group">
 						<b>Link Technical Spec</b>
 						<input type="text" class="form-control" name="link" id="link" value="{{$p->product_technical_spec}}" placeholder="Link Technical Spec" />
 					</div>
