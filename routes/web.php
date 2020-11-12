@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/coba', function () {
     return view('welcome');
 });
 
@@ -33,24 +33,26 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::get('/contact_us_list', 'App\Http\Controllers\InquiryListController@getAllInquiries');
+Route::get('/contact_us_list', 'App\Http\Controllers\InquiryListController@getAllInquiries')->middleware('auth');;
 
-Route::post('/contact_us_list/done/{id}', 'App\Http\Controllers\InquiryListController@markAsDone');
+Route::post('/contact_us_list/done/{id}', 'App\Http\Controllers\InquiryListController@markAsDone')->middleware('auth');;
 
 Route::get('/contact_us_list/session', 'App\Http\Controllers\InquiryListController@checkSession');
 
-Route::get('/product_list/add', 'App\Http\Controllers\ProductController@upload');
+Route::get('/product_list/add', 'App\Http\Controllers\ProductController@upload')->middleware('auth');
 
-Route::post('/product_list/proses', 'App\Http\Controllers\ProductController@proses');
+Route::post('/product_list/proses', 'App\Http\Controllers\ProductController@proses')->middleware('auth');
 
-Route::get('/product_list', 'App\Http\Controllers\ProductController@viewProductAdmin');
+Route::get('/product_list', 'App\Http\Controllers\ProductController@viewProductAdmin')->middleware('auth');
 
-Route::get('/product_list/edit/{id}', 'App\Http\Controllers\ProductController@edit');
+Route::get('/product_list/edit/{id}', 'App\Http\Controllers\ProductController@edit')->middleware('auth');
 
-Route::post('/product_list/edit/proses/{id}', 'App\Http\Controllers\ProductController@updateProduct');
+Route::post('/product_list/edit/proses/{id}', 'App\Http\Controllers\ProductController@updateProduct')->middleware('auth');
 
-Route::get('/product_list/delete/{id}', 'App\Http\Controllers\ProductController@deleteProduct');
+Route::get('/product_list/delete/{id}', 'App\Http\Controllers\ProductController@deleteProduct')->middleware('auth');
 
 Route::get('/dashboards', function () {
     return view('admin-dashboard');
 });
+
+Route::get('/', 'App\Http\Controllers\ProductController@viewProduct');

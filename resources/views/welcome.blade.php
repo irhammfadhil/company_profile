@@ -11,6 +11,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/style-slide.css">
+        <style type="text/css">
+            .container img {
+                width: 50%;
+                height: auto;
+            }
+            @media only screen and (max-width: 900px) {
+                .container img{width: 50%; height: auto; margin-left: auto; margin-right: auto;}
+            }
+        </style>
     </head>
     <body class="is-preload">
 
@@ -24,31 +34,14 @@
                             <!-- Header -->
                                 <header id="header">
                                     <a href="index.html" class="logo"><strong>PT. Irhamindo Laksono</strong></a>
-                                    <ul class="icons">
-                                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                                        <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-                                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                                        <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
-                                    </ul>
                                 </header>
                                 <br>
-                                <h2 style="text-align:center;">Welcome to</h1>
-                                <h1 style="text-align:center;"> PT. IRHAMINDO LAKSONO</h1>
-                                <h2 style="text-align:center; font-size: 30px;">Your Reliable Chemical Partner </h2>
-                            <!-- Banner -->
-                                <section id="banner">
-                                    <div class="content">
-                                        <p>PT. Irhamindo Laksono has the quality products you need with best price you want. We’ve been serving the industries in all over Indonesia since 1999 and take pride in our reputation as the one of the area’s premium suppliers. Let us know what products you’re looking for, and we’ll be happy to supply them to you in no time whatsoever.</p>
-                                        <ul class="actions">
-                                            <li><a href="/about_us" class="button big">Learn More</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="w3-content w3-display-container">
-                                      <img class="mySlides" src="images/pic01.jpg" style="width:100%">
-                                      <img class="mySlides" src="images/pic02.jpg" style="width:100%">
-                                      <img class="mySlides" src="images/pic03.jpg" style="width:100%">
-                                      <img class="mySlides" src="images/pic04.jpg" style="width:100%">
+                                <!--<div class="w3-content w3-display-container" style="">
+                                      <img class="mySlides" src="images/passage-4654260_1920.jpg" style="width:100%">
+                                      <img class="mySlides" src="images/the-periodic-table-4273681_1920.jpg" style="width:100%">
+                                      <img class="mySlides" src="images/light-bulb-5244001_1920.jpg" style="width:100%">
+                                      <img class="mySlides" src="images/writing-828911_1920.jpg" style="width:100%">
+                                      <img class="mySlides" src="images/handshake-3298455_1920.jpg" style="width:100%">
 
                                       <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
                                       <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
@@ -72,7 +65,36 @@
                                       }
                                       x[slideIndex-1].style.display = "block";  
                                     }
-                                    </script>
+                                    </script>-->
+                                    <div class="slider slider-2">
+                                      <div class="photos">
+                                        <img src="images/passage-4654260_1920.jpg" class="shown" alt="">
+                                        <img src="images/the-periodic-table-4273681_1920.jpg" class="" alt="">
+                                        <img src="images/light-bulb-5244001_1920.jpg" class="" alt="">
+                                        <img src="images/writing-828911_1920.jpg" class="" alt="">
+                                        <img src="images/handshake-3298455_1920.jpg" class="" alt="">
+                                        <div class="buttons">
+                                          <div class="prev"></div>
+                                          <div class="next"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                <script  src="assets/js/script-slide.js"></script>
+                                <br><br>
+                                <h2 style="text-align:center;">Welcome to</h1>
+                                <h1 style="text-align:center;"> PT. IRHAMINDO LAKSONO</h1>
+                                <h2 style="text-align:center;">Your Reliable Chemical Partner </h2>
+                            <!-- Banner -->
+                                <section id="banner" style="margin-bottom: 0px; margin-top: -60px;">
+                                    <div class="content">
+                                        <br>
+                                        <p style="font-size: 22px;">PT Irhamindo Laksono is local manufacture of copper sulphate. We are committed to providing the highest quality products and the best service to meet the needs of consumers at the best price. 
+                                        We are pleased to serve you wholeheartedly. Your satisfaction is our happiness.
+                                        </p>
+                                        <ul class="actions">
+                                            <li><a href="/about_us" class="button big">Learn More</a></li>
+                                        </ul>
+                                    </div>
                                 </section>
                         </div>
                     </div>
@@ -110,19 +132,18 @@
                                         <li class="icon solid fa-envelope"><a href="#">irhamindo.laksono@gmail.com</a></li>
                                         <li class="icon solid fa-phone">+62 811 890 135</li>
                                         <li class="icon solid fa-phone">+62 21 8240 9517</li>
-                                        <li class="icon solid fa-home">1234 Somewhere Road #8254<br />
-                                        Nashville, TN 00000-0000</li>
+                                        <li class="icon solid fa-home">Villa Galaxy Jl. Lotus Raya D2/7<br />
+                                        Jakasetia, Bekasi Selatan, Bekasi 17147</li>
                                     </ul>
                                 </section>
 
                             <!-- Footer -->
                                 <footer id="footer">
-                                    <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                                    <p class="copyright">&copy; 2020 PT Irhamindo Laksono. All rights reserved. Designed by <a href="https://html5up.net">HTML5 UP</a>.</p>
                                 </footer>
 
                         </div>
                     </div>
-
             </div>
 
         <!-- Scripts -->

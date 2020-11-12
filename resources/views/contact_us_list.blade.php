@@ -35,7 +35,12 @@
                 <li><a href="#">Profile</a></li>
                 <li><a href="#">Settings</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#">Sign out</a></li>
+                <li>
+                  <form method="POST" action="/logout">
+                    @csrf
+                    <a class="block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out" href="/logout" onclick="event.preventDefault();this.closest('form').submit();">Logout</a>
+                  </form>
+                </li>
               </ul>
             </li>
           </ul>

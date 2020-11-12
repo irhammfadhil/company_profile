@@ -1,0 +1,78 @@
+.slider {
+    width: 1000px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.slider .photos {
+    position: relative;
+    height: 619px;
+}
+
+.slider .photos img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.slider .photos img.shown {
+    opacity: 1;
+}
+
+.prev:before,
+.next:before {
+  color: #fff;
+  font-size: 50px;
+  position: absolute;
+  top: 45%;
+  cursor: pointer;
+}
+
+.prev:before {
+  content: '<';
+  left: 0;
+}
+
+.next:before {
+  content: '>';
+  right: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1150px) {
+  .slider {width: 800px;
+    margin: 0 auto 10px;
+    text-align: center;}
+  .slider .photos {
+    position: relative;
+    height: 495px;
+  }
+  .prev:before,
+  .next:before {
+  color: #fff;
+  font-size: 50px;
+  position: absolute;
+  top: 45%;
+  cursor: pointer;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 900px) {
+  .slider {width: 300px;
+    margin: 0 auto 10px;
+    text-align: center;}
+  .slider .photos {
+    position: relative;
+    height: 186px;
+  }
+  .prev:before,
+  .next:before {
+  color: #fff;
+  font-size: 35px;
+  position: absolute;
+  top: 40%;
+  cursor: pointer;
+  }
+}

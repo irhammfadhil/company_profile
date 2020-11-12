@@ -24,16 +24,7 @@
                             <!-- Header -->
                                 <header id="header">
                                     <a href="index.html" class="logo"><strong>PT. Irhamindo Laksono</strong></a>
-                                    <ul class="icons">
-                                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                                        <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-                                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                                        <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
-                                    </ul>
                                 </header>
-                            <br>
-                            <h2 style="text-align: center;">Contact Us</h2>
                             <br>
                             @if(count($errors) > 0)
                             <div class="alert alert-danger">
@@ -42,6 +33,14 @@
                                 @endforeach
                             </div>
                             @endif
+                            @if(Session::get('message') == 'Success!')
+                              <div class="alert alert-success" role="alert">
+                                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                                  {{Session::get('message')}}
+                              </div>
+                            @endif
+                            <h2 style="text-align: center;">Contact Us</h2>
+                            <br>
                             <!-- Form -->
                                                     <form method="post" action="/contact_us">
                                                         {{ csrf_field() }}
@@ -103,14 +102,14 @@
                                         <li class="icon solid fa-envelope"><a href="#">irhamindo.laksono@gmail.com</a></li>
                                         <li class="icon solid fa-phone">+62 811 890 135</li>
                                         <li class="icon solid fa-phone">+62 21 8240 9517</li>
-                                        <li class="icon solid fa-home">1234 Somewhere Road #8254<br />
-                                        Nashville, TN 00000-0000</li>
+                                        <li class="icon solid fa-home">Villa Galaxy Jl. Lotus Raya D2/7<br />
+                                        Jakasetia, Bekasi Selatan, Bekasi 17147</li>
                                     </ul>
                                 </section>
 
                             <!-- Footer -->
                                 <footer id="footer">
-                                    <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                                    <p class="copyright">&copy; 2020 PT Irhamindo Laksono. All rights reserved. Designed by <a href="https://html5up.net">HTML5 UP</a>.</p>
                                 </footer>
 
                         </div>

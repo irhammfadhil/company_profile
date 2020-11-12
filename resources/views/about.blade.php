@@ -10,6 +10,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/style-slide2.css">
     </head>
     <body class="is-preload">
 
@@ -23,13 +24,6 @@
                             <!-- Header -->
                                 <header id="header">
                                     <a href="index.html" class="logo"><strong>PT. Irhamindo Laksono</strong></a>
-                                    <ul class="icons">
-                                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                                        <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-                                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                                        <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
-                                    </ul>
                                 </header>
 
                             <!-- Banner -->
@@ -38,14 +32,31 @@
                                         <header>
                                             <h1>About Us</h1>
                                         </header>
-                                        <p>PT. Irhamindo Laksono is a chemical trading company which located in Bekasi West Java. Established in 1999 as a distributor chemicals. We
-										have served consumers from various industries. </p> <p>Since 2010 we focused our product in copper sulphate pentahydrate. <br> We also produce our own
-										copper sulphate which is being used for copper galvanizing industry, Animal Feed, Mining, Water Treatment, fertilizers, etc. </p> <p>Copper Sulphate provided by us are processed as per the industry set norms under the most suitable condition. Our team member only uses quality assured
-										chemical compound to ensure the copper sulphate production. </p> <p>Our main product also has quality test results from the Laboratory of PT. Sucofindo.</p>
+                                        <p style="font-size: 18px;">PT. Irhamindo Laksono  is located in Bekasi West Java. We were founded in 1999. We produce copper sulphate which are used for copper galvanizing industry, Poultry Feed, Mining, Water Treatment, fertilizers, etc <br><br>
+                                        Copper Sulphate provided by us are processed as per the industry set norms under the most suitable condition. Our team member only uses quality assured chemical compound to ensure the copper sulphate production.
+                                        </p>
                                     </div>
-                                    <span class="image object">
-                                        <img src="images/chem.jpg" alt="" style='height: 100%; width: 100%; object-fit: contain' />
-                                    </span>
+                                    <div class="content">
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <span class="image object">
+                                            <div class="slider slider-2">
+                                              <div class="photos">
+                                                <img src="images/copper-wire-113249_1920.jpg" class="shown" alt="">
+                                                <img src="images/Palm-oil-Indonesia-e1566559194709.jpg" class="" alt="">
+                                                <img src="images/poultry feed.jpg" class="" alt="">
+                                                <img src="images/water-1018808_1920.jpg" class="" alt="">
+                                                <div class="buttons">
+                                                  <div class="prev"></div>
+                                                  <div class="next"></div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <script  src="assets/js/script-slide.js"></script>
+                                        </span>
+                                    </div>
                                 </section>
 							<!-- Section -->
 								<section>
@@ -105,14 +116,14 @@
                                         <li class="icon solid fa-envelope"><a href="#">irhamindo.laksono@gmail.com</a></li>
                                         <li class="icon solid fa-phone">+62 811 890 135</li>
                                         <li class="icon solid fa-phone">+62 21 8240 9517</li>
-                                        <li class="icon solid fa-home">1234 Somewhere Road #8254<br />
-                                        Nashville, TN 00000-0000</li>
+                                        <li class="icon solid fa-home">Villa Galaxy Jl. Lotus Raya D2/7<br />
+                                        Jakasetia, Bekasi Selatan, Bekasi 17147</li>
                                     </ul>
                                 </section>
 
                             <!-- Footer -->
                                 <footer id="footer">
-                                    <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                                    <p class="copyright">&copy; 2020 PT Irhamindo Laksono. All rights reserved. Designed by <a href="https://html5up.net">HTML5 UP</a>.</p>
                                 </footer>
 
                         </div>

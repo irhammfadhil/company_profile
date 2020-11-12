@@ -52,7 +52,7 @@
                       <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
                       {{Session::get('message')}}
                   </div>
-                  @elseif(Session::get('message') == 'Data successfully updated!')
+                  @else
                   <div class="alert alert-success" role="alert">
                     <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
                       {{Session::get('message')}}

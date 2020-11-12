@@ -92,7 +92,7 @@ body {
 /* Type */
 body, input, select, textarea {
   color: #7f888f;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Century Gothic", sans-serif;
   font-size: 13pt;
   font-weight: 400;
   line-height: 1.65; }
@@ -2199,7 +2199,7 @@ button,
   -ms-user-select: none;
   user-select: none;
   color: #3d4449;
-  font-family: "Roboto Slab", serif;
+  font-family: "Century Gothic", serif;
   font-weight: 400;
   letter-spacing: 0.075em;
   list-style: none;

@@ -23,17 +23,41 @@
                             <!-- Header -->
                                 <header id="header">
                                     <a href="index.html" class="logo"><strong>PT. Irhamindo Laksono</strong></a>
-                                    <ul class="icons">
-                                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                                        <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-                                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                                        <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
-                                    </ul>
                                 </header>
                             <br>
                             <h2 style="text-align: center;">Our Products</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ultrices tellus, ornare suscipit urna. Praesent faucibus lorem justo, iaculis tempus est tincidunt sit amet. Nunc a nibh ut nunc tempor aliquam. Etiam turpis erat, porttitor eu nibh non, dictum ornare leo. Curabitur vestibulum, quam suscipit pulvinar scelerisque, nunc ipsum porttitor eros, ac feugiat dolor risus nec lectus. Nullam vitae risus ac diam accumsan pellentesque sit amet vel massa. Nam blandit leo ut urna rhoncus lacinia. Vestibulum a lobortis dui. Duis et ante a ante laoreet consequat. Fusce sagittis facilisis est scelerisque vestibulum. In a diam magna. Phasellus sed nisl enim. Curabitur viverra libero ligula, in blandit enim laoreet ac. Donec consequat, eros at dignissim pretium, risus odio posuere dolor, in faucibus sem leo sed erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur fringilla augue sit amet vulputate aliquam. </p>
+                            <p>Copper(II) sulfate, also known as copper sulphate, are the inorganic compounds with the chemical formula CuSO4(H2O)x, where x can range from 0 to 5. The pentahydrate (x = 5) is the most common form. Copper Sulphate use in micro-nutirents as nutrients for plant's growth, also use for fertilizer. It is also used in Poultry & Cattle Feed as mineral and industrial use. </p>
+
+                            <h3>General Technical Specification</h3>
+
+                            <table class="table table-sm">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Parameters</th>
+                                  <th scope="col">Results</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Product Name</td>
+                                  <td><b>Copper Sulphate Pentahydrate</b></td>
+                                </tr>
+                                <tr>
+                                  <td>Purity</td>
+                                  <td>min 99.00%</td>
+                                </tr>
+                                <tr>
+                                  <td>Copper</td>
+                                  <td>min 24.50%</td>
+                                </tr>
+                                <tr>
+                                  <td>Packing</td>
+                                  <td>25 or 50 kg / P.P woven bag</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <br>
+                            <p>We produce two types of copper sulphate</p>
                         <!-- Section -->
                                 <section>
                                     <div class="posts">
@@ -42,7 +66,7 @@
                                             <a href="#" class="image"><img style="width:400px;height:400px;" src="{{$p->product_img}}" alt="" /></a>
                                             <h3>{{$p->product_name}}</h3>
                                             <p>{{$p->product_desc}}</p>
-                                            <p><b style="font-size: 24px;">Rp{{$p->product_price}}</b></p>
+                                            <p><b style="font-size: 24px;">Call For Price</b></p>
                                             <ul class="actions">
                                                 <li><a href="{{$p->product_technical_spec}}" class="button">Download Technical Spec</a></li>
                                             </ul>
@@ -86,14 +110,14 @@
                                         <li class="icon solid fa-envelope"><a href="#">irhamindo.laksono@gmail.com</a></li>
                                         <li class="icon solid fa-phone">+62 811 890 135</li>
                                         <li class="icon solid fa-phone">+62 21 8240 9517</li>
-                                        <li class="icon solid fa-home">1234 Somewhere Road #8254<br />
-                                        Nashville, TN 00000-0000</li>
+                                        <li class="icon solid fa-home">Villa Galaxy Jl. Lotus Raya D2/7<br />
+                                        Jakasetia, Bekasi Selatan, Bekasi 17147</li>
                                     </ul>
                                 </section>
 
                             <!-- Footer -->
                                 <footer id="footer">
-                                    <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                                    <p class="copyright">&copy; 2020 PT Irhamindo Laksono. All rights reserved. Designed by <a href="https://html5up.net">HTML5 UP</a>.</p>
                                 </footer>
 
                         </div>

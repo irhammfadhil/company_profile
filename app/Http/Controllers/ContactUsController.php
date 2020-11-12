@@ -21,6 +21,6 @@ class ContactUsController extends Controller
     		'contact_us_msg' => $request->message,
     		'contact_us_status' => 0
     	]);
-    	return redirect('/');
+    	return redirect('/contact_us')->withMessage('Success!');
     }
 }

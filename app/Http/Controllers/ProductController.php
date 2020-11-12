@@ -4,13 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 
 class ProductController extends Controller
 {
+
     public function upload() {
     	return view('product-admin');
     }
     public function proses(Request $request) {
+        $user = Auth::user();
     	$this->validate($request, [
     		'name' => 'required',
     		'keterangan' => 'required',
@@ -41,12 +44,19 @@ class ProductController extends Controller
     }
     public function viewProduct(){
     	$product = DB::table('products') -> get();
-    	return view('product', ['product' => $product]);
+    	return view('coba', ['product' => $product]);
     }
 
 	public function viewProductAdmin(){
-    	$product = DB::table('products')->paginate(10);
-    	return view('product-admin-list', ['product' => $product]);
+        $user = Auth::user()->name;
+        $roles = DB::table('users')->select('role')->where('name', $user)->value('role');
+        if (strcmp($roles,"admin") != 0) {
+            return redirect('/');
+        }
+        else {
+            $product = DB::table('products')->paginate(10);
+            return view('product-admin-list', ['product' => $product]);
+        }
     }
 
     public function edit($id){
@@ -87,6 +97,6 @@ class ProductController extends Controller
     }
     public function deleteProduct($id) {
     	DB::table('products')->where('product_id',$id)->delete();
-    	return redirect('/product_list');
+    	return redirect('/product_list')->withMessage('Delete successful!');
     }
 }
