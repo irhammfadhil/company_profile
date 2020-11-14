@@ -27,19 +27,9 @@
     <link href="assets/hehe/css/fontawesome-all.css" rel="stylesheet">
     <link href="assets/hehe/css/swiper.css" rel="stylesheet">
 	<link href="assets/hehe/css/magnific-popup.css" rel="stylesheet">
-	<link href="assets/hehe/css/styles.css" rel="stylesheet">
+	<link href="assets/hehe/css/style.css" rel="stylesheet">
 
-    <!-- Scripts -->
-    <script src="assets/hehe/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="assets/hehe/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
-    <script src="assets/hehe/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="assets/hehe/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="assets/hehe/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="assets/hehe/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
-    <script src="assets/hehe/js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
-    <script src="assets/hehe/js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
-    <script src="assets/hehe/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
-    <script src="assets/hehe/js/scripts.js"></script> <!-- Custom scripts -->
+	<script src="assets/hehe/js/jquery.min.js"></script>
 
     <script>
         console.log("hehe");
@@ -105,29 +95,14 @@
                     <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#intro">INTRO</a>
+                    <a class="nav-link page-scroll" href="#intro">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#services">SERVICES</a>
+                    <a class="nav-link page-scroll" href="#services">PRODUCT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#callMe">CALL ME</a>
+                    <a class="nav-link page-scroll" href="#applications">APPLICATIONS</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#projects">PROJECTS</a>
-                </li>
-
-                <!-- Dropdown Menu -->          
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
-                        <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
-                    </div>
-                </li>
-                <!-- end of dropdown menu -->
-
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#contact">CONTACT</a>
                 </li>
@@ -193,7 +168,6 @@
     </div> <!-- end of basic-1 -->
     <!-- end of intro -->
 
-
     <!-- Description -->
     <div class="cards-1">
         <div class="container">
@@ -204,11 +178,11 @@
                     <div class="card">
                         <span class="fa-stack">
                             <span class="hexagon"></span>
-                            <i class="fas fa-binoculars fa-stack-1x"></i>
+                            <i class="fas fa-bicycle fa-stack-1x"></i>
                         </span>
                         <div class="card-body">
                             <h4 class="card-title">Our Vision</h4>
-                            <p>The starting point of any success story is knowing your current position in the business environment</p>
+                            <p>Become the leading copper sulphate manufacturer in Indonesia.</p>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -220,8 +194,8 @@
                             <i class="fas fa-list-alt fa-stack-1x"></i>
                         </span>
                         <div class="card-body">
-                            <h4 class="card-title">Development Planning</h4>
-                            <p>After completing the environmental analysis the next stage is to design and  plan your development strategy</p>
+                            <h4 class="card-title">Our Mission</h4>
+                            <p>Become a reliable local copper sulphate manufacture for Indonesia industry.</p>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -233,8 +207,15 @@
                             <i class="fas fa-chart-pie fa-stack-1x"></i>
                         </span>
                         <div class="card-body">
-                            <h4 class="card-title">Our Mission</h4>
-                            <p>In this phase you will focus on executing the actions plan and evaluating the results after each marketing campaign</p>
+                            <h4 class="card-title">Our Values</h4>
+                            <ul>
+                            	<li>Safety & Wellness</li>
+                            	<li>Honesty & Integrity</li>
+                            	<li>Customer Focus</li>
+                            	<li>Innovation</li>
+                            	<li>Sustainability</li>
+                            	<li>Respect</li>
+                            </ul>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -245,7 +226,88 @@
     </div> <!-- end of cards-1 -->
     <!-- end of description -->
 
+    <!-- Testimonials -->
+    <div id="applications" class="slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Applications</h2>
+                    <p class="p-heading">Our clients are our partners and we can not imagine a better future for our company without helping them reach their objectives</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
 
+                    <!-- Card Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                            <div class="swiper-wrapper">
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img style="display: block; margin-left: auto; margin-right: auto; width: 170px; height: 170px;" src="images/poultry feed.jpg" alt="alternative">
+                                        <div class="card-body">
+                                        	<div class="testimonial-author">Poultry Feed</div>
+                                            <div class="testimonial-text">Addition of copper sulphate increase growth response and improved food conversion in broilers maintained under commercial conditions.</div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img style="display: block; margin-left: auto; margin-right: auto; width: 170px; height: 170px;" src="images/copper-wire-113249_1920.jpg" alt="alternative">
+                                        <div class="card-body">
+                                        	<div class="testimonial-author">Electroplating</div>
+                                            <div class="testimonial-text">Copper sulfate allows the electroplating technician to harness the elemental copper within the copper sulfate . </div>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img style="display: block; margin-left: auto; margin-right: auto; width: 170px; height: 170px;" src="images/Palm-oil-Indonesia-e1566559194709.jpg" alt="alternative">
+                                        <div class="card-body">
+                                        	<div class="testimonial-author">Oil Palm Production</div>
+                                            <div class="testimonial-text">Copper sulphate fertilizer can be used to balance the elements needed and increase the production of oil palm. The addition of copper sulphate used for chlorophyll formers, catalysts in physiological processes, activate the enzyme cytochrome oxidase, butyric acid phenolase, as well as lactase for physiological reactions, etc in oil palm production.</div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+        
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img style="display: block; margin-left: auto; margin-right: auto; width: 170px; height: 170px;" src="images/water-1018808_1920.jpg" alt="alternative">
+                                        <div class="card-body">
+                                        	<div class="testimonial-author">Water purifier</div>
+                                            <div class="testimonial-text">Copper Sulphate is used for water purifier in swimming pool. It also gives a bluish color to the water. So that the pool will look more beautiful. </div>
+                                        </div>
+                                    </div>        
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+                            
+                            </div> <!-- end of swiper-wrapper -->
+        
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+        
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of sliedr-container -->
+                    <!-- end of card slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider -->
+    <!-- end of testimonials -->
+    
     <!-- Services -->
     <div id="services" class="cards-2">
         <div class="container">
@@ -262,7 +324,7 @@
                     <!-- Card -->
                     <div class="card">
                         <div class="card-image">
-                            <img class="img-fluid" src="{{$p->product_img}}" alt="alternative" style="width:350px;height:350px; object-fit: cover;">
+                            <img class="img-fluid" src="{{$p->product_img}}" alt="alternative" style=" object-fit: cover;">
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">{{$p->product_name}}</h3>
@@ -354,7 +416,7 @@
                                                             </div>
                                                             
                                                             <div class="form-group">
-                                                                <button type="submit" class="form-control-submit-button"/>Send Message</button>
+                                                                <button type="submit" class="form-control-submit-button"/>SEND MESSAGE</button>
                                                             </div>
                                                     </form>
                     <!-- end of contact form -->
@@ -441,6 +503,18 @@
         </div> <!-- end of container -->
     </div> <!-- end of copyright --> 
     <!-- end of copyright -->
+
+        <!-- Scripts -->
+    <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="assets/hehe/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="assets/hehe/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="assets/hehe/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="assets/hehe/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="assets/hehe/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="assets/hehe/js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="assets/hehe/js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script src="assets/hehe/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="assets/hehe/js/scripts.js"></script> <!-- Custom scripts -->
     
 </body>
 </html>
