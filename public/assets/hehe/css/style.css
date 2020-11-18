@@ -915,12 +915,13 @@ input[type='checkbox'] {
 	margin-bottom: 5.625rem;
 	border: none;
 	background-color: transparent;
+	overflow: hidden;
 }
 
 .cards-2 .card-image img {
 	margin: 0;
 	border-radius: 0.25rem;
-	transition: all 0.3s;
+	transition: transform 0.5s ease;
 	max-height: auto;
 	max-width: 100%;
 }
