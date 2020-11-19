@@ -56,6 +56,5 @@ Route::get('/dashboards', function () {
 });
 
 Route::get('/', 'App\Http\Controllers\ProductController@viewProduct');
-Route::get('/2', function() {
-	return view('coba2');
-});
+
+Route::get('/specs', 'App\Http\Controllers\ProductController@showSpecs');

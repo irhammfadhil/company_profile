@@ -18,7 +18,7 @@
 	<meta property="og:type" content="article" />
 
     <!-- Website Title -->
-    <title>Aria - Business HTML Landing Page Template</title>
+    <title>PT Irhamindo Laksono</title>
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
@@ -98,10 +98,10 @@
                     <a class="nav-link page-scroll" href="#intro">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#services">PRODUCT</a>
+                    <a class="nav-link page-scroll" href="#applications">APPLICATIONS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#applications">APPLICATIONS</a>
+                    <a class="nav-link page-scroll" href="#services">PRODUCT</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#contact">CONTACT</a>
@@ -331,7 +331,7 @@
                             <p>{{$p->product_desc}}</p>                 
                         </div>
                         <div class="button-container">
-                            <a class="btn-solid-reg page-scroll" href="#callMe">DETAILS</a>
+                            <a class="btn-solid-reg page-scroll" href="/specs?id={{$p->product_id}}">DETAILS</a>
                         </div> <!-- end of button-container -->
                     </div>
                     <!-- end of card -->
@@ -354,7 +354,6 @@
                         <p>We are happy to answer your sales question. Fill out the form and we'll be in touch as soon as possible.</p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="address"><i class="fas fa-map-marker-alt"></i>Villa Galaxy, Jalan Lotus Raya D2/7, Bekasi, West Java, Indonesia 17147</li>
-                            <li><i class="fas fa-phone"></i><a href="tel:02182409517">+62 21 8240 9517</a></li>
                             <li><i class="fas fa-phone"></i><a href="tel:0811890135">+62 811 890 135</a></li>
                             <li><i class="fas fa-envelope"></i><a href="mailto:irham.mfadhil@gmail.com">irhamindo.laksono@gmail.com</a></li>
                         </ul>

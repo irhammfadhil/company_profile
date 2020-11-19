@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+use Image;
 
 class ProductController extends Controller
 {
@@ -28,8 +29,11 @@ class ProductController extends Controller
     	}
     	else {
 			$file = $request->file('image');
-	    	$tujuan_upload = 'data_file';
-	    	$file->move($tujuan_upload,$file->getClientOriginalName());
+            $tujuan_upload = 'data_file';
+            $fileName = $file->getClientOriginalName();
+            $resized = Image::make($file->path());
+            $resized->resize(800,800)->save(public_path($tujuan_upload.'/'.$fileName));
+	    	#$file->move($tujuan_upload,$file->getClientOriginalName());
 	    	$directory = $tujuan_upload."/".$file->getClientOriginalName();
 	    	DB::table('products')->insert([
 	    		'product_name' => $request->name,
@@ -82,7 +86,10 @@ class ProductController extends Controller
                 ]);
             }
             else {
-                $file->move($tujuan_upload,$file->getClientOriginalName());
+                $fileName = $file->getClientOriginalName();
+                $resized = Image::make($file->path());
+                $resized->resize(800,800)->save(public_path($tujuan_upload.'/'.$fileName));
+                #$file->move($tujuan_upload,$file->getClientOriginalName());
                 $directory = $tujuan_upload."/".$file->getClientOriginalName();
                 DB::table('products')->where('product_id',$id)->update([
                 'product_name' => $request->name,
@@ -98,5 +105,15 @@ class ProductController extends Controller
     public function deleteProduct($id) {
     	DB::table('products')->where('product_id',$id)->delete();
     	return redirect('/product_list')->withMessage('Delete successful!');
+    }
+
+    public function showSpecs(Request $request) {
+        $ids = $request->id;
+        $query = DB::table('product_details')->join('products', 'products.product_id', '=', 'product_details.product_id')
+        ->select('products.product_name', 'product_details.purity', 'product_details.element_purity', 'product_details.packaging')
+        ->where('products.product_id', $ids)
+        ->get();
+        #return $query;
+        return view('spec', compact('query'));
     }
 }
