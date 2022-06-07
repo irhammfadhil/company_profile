@@ -142,6 +142,7 @@ strong {
 .section-title {
 	color: #3385c6;
 	font: 500 0.8125rem/1.125rem "Montserrat", sans-serif;
+	font-size: 20pt;
 }
 
 .btn-solid-reg {
@@ -921,9 +922,7 @@ input[type='checkbox'] {
 .cards-2 .card-image img {
 	margin: 0;
 	border-radius: 0.25rem;
-	transition: transform 0.5s ease;
-	max-height: auto;
-	max-width: 100%;
+	transition: all 0.3s;
 }
 
 .cards-2 .card-image:hover img {
@@ -1855,7 +1854,7 @@ a:hover.back-to-top {
 /*     21. Media Queries     */
 /*****************************/	
 /* Min-width width 768px */
-@media (min-width: 768px) {
+@media (min-width: 0px) {
 	
 	/* General Styles */
 	.p-heading {
