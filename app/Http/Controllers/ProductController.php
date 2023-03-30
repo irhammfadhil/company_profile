@@ -17,10 +17,7 @@ class ProductController extends Controller
         $user = Auth::user();
     	$this->validate($request, [
     		'name' => 'required',
-    		'keterangan' => 'required',
     		'image' => 'required|image',
-            'price' => 'required',
-    		'link' => 'required',
     	]);
     	#check produck is exists or not
     	$product = DB::table('products')->select('product_name')->where('product_name', $request->name)->value('product');
@@ -112,26 +109,49 @@ class ProductController extends Controller
         $query = DB::table('product_details')->join('products', 'products.product_id', '=', 'product_details.product_id')
         ->select('products.product_name', 'products.product_element', 'products.product_element_symbol', 'product_details.purity', 'product_details.element_purity', 'product_details.packaging')
         ->where('products.product_id', $ids)
-        ->get();
-        #return $query;
-        return view('spec', compact('query'));
+        ->first();
+        return view('spec', [
+            'id' => $ids,
+            'query' => $query,
+        ]);
     }
     
     public function showFormUpdateSpecs($id) {
         $query = DB::table('product_details')->join('products', 'products.product_id', '=', 'product_details.product_id')
         ->select('products.product_id', 'products.product_name', 'product_details.purity', 'product_details.element_purity', 'product_details.packaging')
         ->where('products.product_id', $id)
-        ->get();
+        ->first();
         #return $query;
-    	return view('details-edit', compact('query'));
+    	return view('details-edit', [
+            'query' => $query,
+            'id' => $id
+        ]);
     }
 
     public function updateDetails(Request $request, $id) {
-        DB::table('product_details')->where('product_id',$id)->update([
-            'purity' => $request->purity,
-            'element_purity' => $request->element,
-            'packaging' => $request->packaging,
+        $purity = $request->purity;
+        $element_purity = $request->element;
+        $packaging = $request->packaging;
+
+        $query = DB::table('product_details')->where('product_id',$id)->first();
+        if(!$query) {
+            DB::table('product_details')->insert([
+                'product_id' => $id,
+                'purity' => $request->purity,
+                'element_purity' => $request->element,
+                'packaging' => $request->packaging,
+                'created_at' => date('Y-m-d H:i:s'),
+                'updated_at' => date('Y-m-d H:i:s'),
             ]);
+        }
+        else {
+            DB::table('product_details')->where('product_id',$id)->update([
+                'purity' => $request->purity,
+                'element_purity' => $request->element,
+                'packaging' => $request->packaging,
+                'updated_at' => date('Y-m-d H:i:s'),
+            ]);
+        }
         return redirect('/product_list')->withMessage('Update details successful!');
     }
 }

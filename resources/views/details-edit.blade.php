@@ -9,7 +9,6 @@
 	<div class="row">
 		<div class="container">
 			<h2 class="text-center my-5">Edit Details</h2>
-            <h3 class="text-center my-5">For {{$query[0]->product_name}}</h3>
 			
 			<div class="col-lg-8 mx-auto my-5">	
  
@@ -20,23 +19,41 @@
 					@endforeach
 				</div>
 				@endif
- 
-				<form action="/product_list/details/edit/proses/{{$query[0]->product_id}}" method="POST" enctype="multipart/form-data">
+				<form action="/product_list/details/edit/proses/{{$id}}" method="POST" enctype="multipart/form-data">
 					{{ csrf_field() }}
+					@if($query)
 					<div class="form-group">
 						<b>Purity</b>
-						<input type="text" class="form-control" name="purity" id="purity" value="{{$query[0]->purity}}" placeholder="Purity" />
+						<input type="text" class="form-control" name="purity" id="purity" value="{{$query->purity}}" placeholder="Purity" />
 					</div>
-
+					@else
+					<div class="form-group">
+						<b>Purity</b>
+						<input type="text" class="form-control" name="purity" id="purity" value="" placeholder="Purity" />
+					</div>
+					@endif
+					@if($query)
                     <div class="form-group">
-						<b>Element Purity</b>
-						<input type="text" class="form-control" name="element" id="element" value="{{$query[0]->element_purity}}" placeholder="Nama Produk" />
+						<b>Element Purity (%)</b>
+						<input type="text" class="form-control" name="element" id="element" value="{{$query->element_purity}}" placeholder="Nama Produk" />
 					</div>
-
+					@else
+					<div class="form-group">
+						<b>Element Purity (%)</b>
+						<input type="text" class="form-control" name="element" id="element" value="" placeholder="Nama Produk" />
+					</div>
+					@endif
+					@if($query)
                     <div class="form-group">
 						<b>Packaging</b>
-						<input type="text" class="form-control" name="packaging" id="packaging" value="{{$query[0]->packaging}}" placeholder="Nama Produk" />
+						<input type="text" class="form-control" name="packaging" id="packaging" value="{{$query->packaging}}" placeholder="Nama Produk" />
 					</div>
+					@else
+					<div class="form-group">
+						<b>Packaging</b>
+						<input type="text" class="form-control" name="packaging" id="packaging" value="" placeholder="Nama Produk" />
+					</div>
+					@endif
 					<input type="submit" value="Edit this product!" class="btn btn-primary">
 				</form>
 			</div>

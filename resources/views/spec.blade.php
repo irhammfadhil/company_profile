@@ -1,41 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Aria is a business focused HTML landing page template built with Bootstrap to help you create lead generation websites for companies and their services.">
-    <meta name="author" content="Inovatik">
 
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-	<meta property="og:site_name" content="" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-	<meta property="og:type" content="article" />
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="PT. Trikarya Berkah Abadi are a supplier of high-quality chemicals and raw materials serving a diverse range of industries. Our commitment to quality and customer satisfaction is what sets us apart from the competition." />
+    <meta name="keywords" content="pt trikarya berkah abadi, trikarya berkah abadi, supplier bahan kimia bekasi, supplier bahan kimia jakarta, supplier bahan kimia jabodetabek, copper sulphate bekasi, cuso4 bekasi, copper sulphate jakarta, cuso4 jakarta, copper sulphate jabodetabek, cuso4 jabodetabek, ferrous sulphate bekasi, feso4 bekasi, ferrous sulphate jakarta, feso4 jakarta, ferrous sulphate jabodetabek, feso4 jabodetabek" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.trikaryaberkahabadi.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Website resmi PT. Trikarya Berkah Abadi">
+    <meta property="og:description" content="PT. Trikarya Berkah Abadi are a supplier of high-quality chemicals and raw materials serving a diverse range of industries. Our commitment to quality and customer satisfaction is what sets us apart from the competition.">
+    <meta property="og:image" content="">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="www.trikaryaberkahabadi.com">
+    <meta property="twitter:url" content="https://www.trikaryaberkahabadi.com/">
+    <meta name="twitter:title" content="Website Resmi PT. Trikarya Berkah Abadi">
+    <meta name="twitter:description" content="PT. Trikarya Berkah Abadi are a supplier of high-quality chemicals and raw materials serving a diverse range of industries. Our commitment to quality and customer satisfaction is what sets us apart from the competition.">
+    <meta name="twitter:image" content="">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-77GR0NDYNB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-77GR0NDYNB');
+    </script>
 
     <!-- Website Title -->
-    <title>PT Irhamindo Laksono - Product Specification</title>
-    
+    <title>PT Trikarya Berkah Abadi - Product Specification</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
     <link href="assets/hehe/css/bootstrap.css" rel="stylesheet">
     <link href="assets/hehe/css/fontawesome-all.css" rel="stylesheet">
     <link href="assets/hehe/css/swiper.css" rel="stylesheet">
-	<link href="assets/hehe/css/magnific-popup.css" rel="stylesheet">
+    <link href="assets/hehe/css/magnific-popup.css" rel="stylesheet">
     <link href="assets/hehe/css/style.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
+
+    <!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
 </head>
+
 <body data-spy="scroll" data-target=".fixed-top">
-    
+
     <!-- Preloader -->
-	<div class="spinner-wrapper">
+    <div class="spinner-wrapper">
         <div class="spinner">
             <div class="bounce1"></div>
             <div class="bounce2"></div>
@@ -43,29 +65,46 @@
         </div>
     </div>
     <!-- end of preloader -->
-    
+
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top" style="background-color: #0288d1;">
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top" style="background-color: #0288d1; height: 80px;">
         <!-- Text Logo - Use this if you don't have a graphic logo -->
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
 
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="index.html"><img src="images/LOGO.png" alt="alternative"></a>
-        <p style="font-size: 30px; color: #ffffff;">PT. IRHAMINDO LAKSONO</p>
-        
+        <a class="navbar-brand logo-image" href=""><img src="{{asset('logo.png')}}" class="img-fluid" alt="alternative"></a>
+
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-awesome fas fa-bars"></span>
             <span class="navbar-toggler-awesome fas fa-times"></span>
         </button>
         <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/#header">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/#intro">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/#applications">USECASES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/#services">PRODUCT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/#contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
     </nav> <!-- end of navbar -->
     <!-- end of navbar -->
 
 
-    <br>
-    <br>
     <br>
     <br>
     <br>
@@ -86,7 +125,7 @@
 
     <br>
 
-    <h2 class="text-center">{{$query[0]->product_name}}</h2>
+    <h2 class="text-center">{{$query->product_name}}</h2>
     <!-- Terms Content -->
     <div class="ex-basic-2">
         <div class="container">
@@ -96,52 +135,277 @@
                         <table class="table">
                             <tr>
                                 <th scope="col">Purity</th>
-                                <td>min. {{$query[0]->purity}}%</td>
+                                <td>min. {{$query->purity}}%</td>
                             </tr>
                             <tr>
-                                <th scope="col">{{$query[0]->product_element}} ({{$query[0]->product_element_symbol}}) content</th>
-                                <td>min. {{$query[0]->element_purity}}%</td>
+                                <th scope="col">{{$query->product_element}} ({{$query->product_element_symbol}}) content</th>
+                                <td>min. {{$query->element_purity}}%</td>
                             </tr>
                             <tr>
                                 <th scope="col">Packaging</th>
-                                <td>{{$query[0]->packaging}}</td>
+                                <td>{{$query->packaging}}</td>
                             </tr>
                         </table>
-                                                <!--
-                        <h3>Limitations Of Liability</h3>
-                        <p>Aria also automatically collects and receives certain information from your computer or mobile device, including the activities you perform on our Website, the Platforms, and the Applications, the type of hardware and software you are using (for example, your operating system or browser), and information obtained from cookies. For example, each time you visit the Website or otherwise use the Services, we automatically collect your IP address, browser and device type, access times, the web page from which you came, the regions from which you navigate the web page, and the web page(s) you access (as applicable).</p>
-                        <p>When you first register for a Aria account, and when you use the Services, we collect some <a class="green" href="#your-link">Personal Information</a> about you such as:</p>
-                        <ul class="list-unstyled li-space-lg indent">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">The geographic area where you use your computer and mobile devices</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Your full name, username, and email address and other contact details</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">A unique Aria user ID (an alphanumeric string) which is assigned to you upon registration</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Other optional information as part of your account profile</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Your IP Address and, when applicable, timestamp related to your consent and confirmation of consent</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Other information submitted by you or your organizational representatives via various methods</div>
-                            </li>
-                        </ul>-->
                     </div> <!-- end of text-container -->
                 </div>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of ex-basic -->
+    <div class="slider">
+        <h2 class="text-center">Usage
+        </h2>
+        <br>
+        @if($id == 11 || $id == 12)
+        <div class="row">
+            <div class="col-lg-12">
+
+                <!-- Card Slider -->
+                <div class="slider-container">
+                    <div class="swiper-container card-slider">
+                        <div class="swiper-wrapper">
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img style="display: block; margin-left: auto; margin-right: auto; width: 170px; height: 170px;" src="{{asset('images/poultry feed.jpg')}}" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-author">Poultry Feed</div>
+                                        <div class="testimonial-text">Addition of copper sulphate increase growth response and improved food conversion in broilers maintained under commercial conditions.</div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img style="display: block; margin-left: auto; margin-right: auto; width: 170px; height: 170px;" src="{{asset('images/copper-wire-113249_1920.jpg')}}" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-author">Electroplating</div>
+                                        <div class="testimonial-text">Copper sulfate allows the electroplating technician to harness the elemental copper within the copper sulfate . </div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img style="display: block; margin-left: auto; margin-right: auto; width: 170px; height: 170px;" src="{{asset('images/Palm-oil-Indonesia-e1566559194709.jpg')}}" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-author">Oil Palm Production</div>
+                                        <div class="testimonial-text">Copper sulphate fertilizer can be used to balance the elements needed and increase the production of oil palm. The addition of copper sulphate used for chlorophyll formers, catalysts in physiological processes, activate the enzyme cytochrome oxidase, butyric acid phenolase, as well as lactase for physiological reactions, etc in oil palm production.</div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img style="display: block; margin-left: auto; margin-right: auto; width: 170px; height: 170px;" src="{{asset('images/water-1018808_1920.jpg')}}" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-author">Water purifier</div>
+                                        <div class="testimonial-text">Copper Sulphate is used for water purifier in swimming pool. It also gives a bluish color to the water. So that the pool will look more beautiful. </div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                        </div> <!-- end of swiper-wrapper -->
+
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <!-- end of add arrows -->
+
+                    </div> <!-- end of swiper-container -->
+                </div> <!-- end of sliedr-container -->
+                <!-- end of card slider -->
+
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        @else
+        <div class="row">
+            <div class="col-lg-12">
+
+                <!-- Card Slider -->
+                <div class="slider-container">
+                    <div class="swiper-container card-slider">
+                        <div class="swiper-wrapper">
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img style="display: block; margin-left: auto; margin-right: auto; width: 170px; height: 170px;" src="{{asset('fertilizer.png')}}" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-author">Fertilizer</div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img style="display: block; margin-left: auto; margin-right: auto; width: 170px; height: 170px;" src="{{asset('batik.png')}}" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-author">Batik Colouring</div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img style="display: block; margin-left: auto; margin-right: auto; width: 170px; height: 170px;" src="{{asset('animal.png')}}" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-author">Animal Skin Tanning</div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img style="display: block; margin-left: auto; margin-right: auto; width: 170px; height: 170px;" src="{{asset('cement.png')}}" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-author">Reductor in Cement Industry</div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img style="display: block; margin-left: auto; margin-right: auto; width: 170px; height: 170px;" src="{{asset('chicken.png')}}" alt="alternative">
+                                    <div class="card-body">
+                                        <div class="testimonial-author">Poultry Feed</div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+                        </div> <!-- end of swiper-wrapper -->
+
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <!-- end of add arrows -->
+
+                    </div> <!-- end of swiper-container -->
+                </div> <!-- end of sliedr-container -->
+                <!-- end of card slider -->
+
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        @endif
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-container about">
+                        <h4>Our Commitment</h4>
+                        <p class="white">We realized that our clients are our partners and we committed to help them achieve their objectives.</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Links</h4>
+                        <ul class="list-unstyled li-space-lg white">
+                            <li>
+                                <a class="white" href="/privacy-policy">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © {{date('Y')}} PT. Trikarya Berkah Abadi. All Rights Reserved</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
+
+    <style>
+        .slider {
+            padding-top: 6.375rem;
+            padding-bottom: 6.5rem;
+        }
+
+        .slider h2 {
+            margin-bottom: 0.75rem;
+            text-align: center;
+        }
+
+        .slider .slider-container {
+            position: relative;
+        }
+
+        .slider .swiper-container {
+            position: static;
+            width: 90%;
+            text-align: center;
+        }
+
+        .slider .swiper-button-prev:focus,
+        .slider .swiper-button-next:focus {
+            /* even if you can't see it chrome you can see it on mobile device */
+            outline: none;
+        }
+
+        .slider .swiper-button-prev {
+            left: -0.5rem;
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23787976'%2F%3E%3C%2Fsvg%3E");
+            background-size: 1.125rem 1.75rem;
+        }
+
+        .slider .swiper-button-next {
+            right: -0.5rem;
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23787976'%2F%3E%3C%2Fsvg%3E");
+            background-size: 1.125rem 1.75rem;
+        }
+
+        .slider .card {
+            position: relative;
+            border: none;
+            background-color: transparent;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .slider .card-image {
+            width: 6rem;
+            height: 6rem;
+            margin-right: auto;
+            margin-bottom: 0.25rem;
+            margin-left: auto;
+            border-radius: 50%;
+        }
+
+        .slider .card .card-body {
+            padding-bottom: 0;
+        }
+
+        .slider .testimonial-text {
+            margin-bottom: 0.625rem;
+        }
+
+        .slider .testimonial-author {
+            color: #484a46;
+        }
+    </style>
+
     <!-- end of terms content -->
     <!-- Scripts -->
     <script src="assets/hehe/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
@@ -155,4 +419,5 @@
     <script src="assets/hehe/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="assets/hehe/js/scripts.js"></script> <!-- Custom scripts -->
 </body>
+
 </html>

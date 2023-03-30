@@ -656,8 +656,8 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-    width: 100px;
-	height: 50px;
+    width: 50%;
+	height: 50%;
 	-webkit-backface-visibility: hidden;
 }
 
@@ -675,7 +675,7 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .nav-item .nav-link {
-	padding: 0.625rem 0.75rem 0.625rem 0.75rem;
+	padding: 1.25rem 1.5rem 1.25rem 1.5rem;
 	color: #fff;
 	text-decoration: none;
 	transition: all 0.2s ease;
