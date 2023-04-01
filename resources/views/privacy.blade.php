@@ -47,7 +47,7 @@
     <!-- end of preloader -->
 
 
-    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top" style="background-color: #0288d1; height: 80px;">
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top" style="background-color: #acaeb0; height: 80px;">
         <!-- Text Logo - Use this if you don't have a graphic logo -->
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
 
@@ -70,10 +70,13 @@
                     <a class="nav-link page-scroll" href="/#intro">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="/#applications">USECASES</a>
+                    <a class="nav-link page-scroll" href="/#division">DIVISION</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="/#services">PRODUCT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="/#applications">APPLICATION</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="/#contact">CONTACT</a>
@@ -267,41 +270,49 @@
         </div> <!-- end of ex-basic-2 -->
         <!-- end of privacy content -->
 
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="text-container about">
-                            <h4>Our Commitment</h4>
-                            <p class="white">We realized that our clients are our partners and we committed to help them achieve their objectives.</p>
-                        </div> <!-- end of text-container -->
-                    </div> <!-- end of col -->
-                    <div class="col-md-2">
-                        <div class="text-container">
-                            <h4>Links</h4>
-                            <ul class="list-unstyled li-space-lg white">
-                                <li>
-                                    <a class="white" href="/privacy-policy">Privacy Policy</a>
-                                </li>
-                            </ul>
-                        </div> <!-- end of text-container -->
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-        </div> <!-- end of footer -->
-        <!-- end of footer -->
+    <!-- Footer -->
+    {{--<div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-container about text-center">
+
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-5">
+                    <h4 style="font-size: 80%;">Our Commitment</h4>
+                    <p class="white" style="font-size: 80%;">We realized that our clients are our partners and we committed to help them achieve their objectives.</p>
+                </div>
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Links</h4>
+                        <ul class="list-unstyled li-space-lg white">
+                            <li>
+                                <a class="white" href="/privacy-policy">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->--}}
+    <!-- end of footer -->
 
 
-        <!-- Copyright -->
-        <div class="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p class="p-small">Copyright © {{date('Y')}} PT. Trikarya Berkah Abadi. All Rights Reserved</p>
-                    </div> <!-- end of col -->
-                </div> <!-- enf of row -->
-            </div> <!-- end of container -->
-        </div> <!-- end of copyright -->
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container" style="background-image: url("gunung.jpg");">
+            <div class="row">
+                <div class="col-lg-12">
+                    <br>
+                    <img src="{{asset('logo.png')}}" class="img-fluid" style="width: 50%; height: auto;">
+                    <br><br>
+                    <p class="p-small">Copyright © {{date('Y')}} PT. Trikarya Berkah Abadi. All Rights Reserved</p>
+                    <br>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
         <!-- end of copyright -->
 
 

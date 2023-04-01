@@ -99,7 +99,7 @@
     <script src="assets/hehe/js/jquery.min.js"></script>
 
     <script>
-        var background = ["images/passage-4654260_1920.jpg", "images/light-bulb-5244001_1920.jpg", "handshake.jpg"];
+        var background = ["bahan-kimia.jpg", "handshake.jpg", "banner-pc.jpg"];
         $(function() {
             var i = -1;
             console.log(i);
@@ -164,10 +164,13 @@
                     <a class="nav-link page-scroll" href="#intro">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#applications">USECASES</a>
+                    <a class="nav-link page-scroll" href="#division">DIVISION</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#services">PRODUCT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#applications">APPLICATION</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#contact">CONTACT</a>
@@ -186,9 +189,10 @@
                     <div class="col-lg-12">
                         <div class="text-container fade-in-text">
                             <h2 style="color: white;" class="fade-in-text">Welcome to</h2>
-                            <h1 class="fade-in-text">PT. TRIKARYA BERKAH ABADI</h1>
+                            <h1 id="typing" style="display:inline; color: #2060a9;"></h1>
+                            <h1 id="typing-innovation" style="display:inline; color: #e0b300;"></h1>
                             <p class="p-heading p-large fade-in-text">Your Reliable Partner</p>
-                            <a class="btn-solid-lg page-scroll fade-in-text" href="#intro">LEARN MORE</a>
+                            <a class="btn-solid-lg page-scroll fade-in-text" style="background-color: #2060a9; color: #ffffff;" href="#intro">LEARN MORE</a>
                         </div>
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
@@ -277,34 +281,94 @@
     <!-- end of description -->
 
     <!-- Intro -->
-    <div id="intro" class="basic-1">
+    <div id="division" class="basic-1" style="background-color: #EEF5FF;">
         <div class="container">
             <h2 class="section-title text-center">OUR DIVISION</h2>
-            <div class="row">
-                <div class="col-lg-6 col-md-6 text-center">
-                    <a href="/#applications"><img src="kimia.png" style="width: 25%; height: auto;" class="img-fluid text-center"></a>
-                    <br>
-                    <a href="/#applications" style="text-decoration: none;">
-                        <h4 class="card-title">Chemical Division</h4>
-                    </a>
-                </div>
-                <div class="col-lg-6 col-md-6 text-center">
-                    <img src="computer.png" style="width: 25%; height: auto;" class="img-fluid text-center">
-                    <br>
-                    <h4 class="card-title">Information Technology Division</h4>
-                </div>
-                <!-- end of card -->
+            <h2 class="text-center">Select Our Product<br> That Meets Your Needs</h2>
+            <br>
+            <div class="row gy-4">
+
+                <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-item position-relative text-center">
+                        <img src="kimia.png" style="width: 25%; height: auto;" class="img-fluid text-center">
+                        <br>
+                        <h3>Chemical Division</h3>
+                        <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+                        <a href="#" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-item position-relative text-center">
+                        <img src="computer.png" style="width: 25%; height: auto;" class="img-fluid text-center">
+                        <h3>Information Technology Division</h3>
+                        <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+                        <a href="#" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div><!-- End Service Item -->
+
             </div>
         </div>
     </div> <!-- end of container -->
     </div> <!-- end of basic-1 -->
 
-    <!-- Testimonials -->
-    <div id="applications" class="slider">
+    <!-- Intro -->
+    <div id="services" class="basic-1" style="background-color: #ffffff;">
+        <div class="container text-center">
+            <div class="section-title text-center">PRODUCTS</div>
+            <h2 class="text-center">Select Our Product<br> That Meets Your Needs</h2>
+            <div class="row">
+                @foreach($product as $p)
+                <div class="col-lg-3 col-md-6 mb-4 text-center">
+                    <div class="card">
+                        <div class="gambar-produk">
+                            <img class="card-img-top" src="{{asset($p->product_img)}}" class="img-fluid" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><a href="specs?id={{$p->product_id}}" style="color: #000000; text-decoration: none;">{{$p->product_name}}</a></h5>
+                        </div>
+                    </div>
+                </div> <!-- end of col -->
+                @endforeach
+            </div> <!-- end of row -->
+        </div>
+    </div> <!-- end of container -->
+
+    <!-- Services -->
+    {{--<div id="services" class="cards-2" style="background-color: #ffffff;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="section-title">USE CASES</h2>
+                    <div class="section-title">PRODUCTS</div>
+                    <h2>Select Our Product<br> That Meets Your Needs</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+
+            <div class="row">
+                <p><b>Click the picture for more information.</b></p>
+                <br>
+                <div class="col-lg-12">
+                    @foreach($product as $p)
+                    <div class="card" style="width: 16rem;">
+                        <img class="card-img-top" src="{{asset($p->product_img)}}" class="img-fluid" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title"><a href="specs?id={{$p->product_id}}" style="color: #000000;">{{$p->product_name}}</a></h5>
+    </div>
+    </div>
+    @endforeach
+
+    </div> <!-- end of col -->
+    </div> <!-- end of row -->
+    </div> <!-- end of container -->
+    </div> <!-- end of cards-2 -->--}}
+    <!-- end of services -->
+
+    <!-- Testimonials -->
+    <div id="applications" class="slider" style="background-color: #EEF5FF;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-title">APPLICATION</h2>
                     <br>
                     <h3 class="p-heading">Our Product has extensive range of uses in industry as shown below</h3>
                 </div> <!-- end of col -->
@@ -454,55 +518,8 @@
     </div> <!-- end of slider -->
     <!-- end of testimonials -->
 
-    <!-- Services -->
-    <div id="services" class="cards-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">PRODUCTS</div>
-                    <h2>Select Our Product<br> That Meets Your Needs</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-
-            <div class="row">
-                <p><b>Click the picture for more information.</b></p>
-                <br>
-                <div class="col-lg-12">
-                    @foreach($product as $p)
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="{{$p->product_img}}" alt="Avatar" style="width:300px;height:300px;">
-                                </div>
-                                <div class="flip-card-back">
-                                    <br>
-                                    <br>
-                                    <h1 style="font-size: 18pt; color: white;">{{$p->product_name}}</h1>
-                                    <br>
-                                    <p style="color: white;">{{$p->product_desc}}</p>
-                                    <a class="btn btn-primary" style="background-color: #dddddd; color: black;" href="specs?id={{$p->product_id}}" role="button">Details</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--<div class="card">
-                        <div class="card-image">
-                            <img class="img-fluid" src="{{$p->product_img}}" alt="alternative" style=" object-fit: cover;">
-                        </div>
-                    </div>-->
-                    <!-- end of card -->
-                    @endforeach
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of cards-2 -->
-    <!-- end of services -->
-
     <!-- Contact -->
-    <div id="contact" class="form-2">
+    <div id="contact" class="form-2" style="background-color: #ffffff;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -535,7 +552,7 @@
                         </div>
 
                         <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">SEND MESSAGE</button>
+                            <button type="submit" class="form-control-submit-button" style="background-color: #113448; color: #ffffff;">SEND MESSAGE</button>
                         </div>
                     </form>
                     <!-- end of contact form -->
@@ -548,15 +565,18 @@
 
 
     <!-- Footer -->
-    <div class="footer">
+    {{--<div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="text-container about">
-                        <h4>Our Commitment</h4>
-                        <p class="white">We realized that our clients are our partners and we committed to help them achieve their objectives.</p>
+                <div class="col-md-12">
+                    <div class="text-container about text-center">
+
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
+                <div class="col-md-5">
+                    <h4 style="font-size: 80%;">Our Commitment</h4>
+                    <p class="white" style="font-size: 80%;">We realized that our clients are our partners and we committed to help them achieve their objectives.</p>
+                </div>
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Links</h4>
@@ -569,16 +589,20 @@
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of footer -->
+    </div> <!-- end of footer -->--}}
     <!-- end of footer -->
 
 
     <!-- Copyright -->
     <div class="copyright">
-        <div class="container">
+        <div class="container" style="background-image: url(" gunung.jpg");">
             <div class="row">
                 <div class="col-lg-12">
+                    <br>
+                    <img src="{{asset('logo.png')}}" class="img-fluid" style="width: 50%; height: auto;">
+                    <br><br>
                     <p class="p-small">Copyright © {{date('Y')}} PT. Trikarya Berkah Abadi. All Rights Reserved</p>
+                    <br>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
@@ -598,6 +622,14 @@
     <script src="assets/hehe/js/scripts.js"></script> <!-- Custom scripts -->
 
     <style>
+        .gambar-produk {
+            overflow: hidden;
+        }
+
+        .card-img-top:hover {
+            transform: scale(1.2);
+        }
+
         .fade-in-text {
             animation: fadeIn 5s;
             -webkit-animation: fadeIn 5s;
@@ -656,6 +688,188 @@
             }
         }
     </style>
+    <style>
+        .post-item {
+            /*box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.06);*/
+            transition: 0.3s;
+            background: #c3c3c3;
+        }
+
+        .post-item .post-img img {
+            transition: 0.5s;
+        }
+
+        .post-item .post-date {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background-color: var(--color-primary);
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 13px;
+            padding: 6px 12px;
+            font-weight: 500;
+        }
+
+        .post-item .post-content {
+            padding: 30px;
+        }
+
+        .post-item .post-title {
+            font-size: 24px;
+            color: var(--color-secondary);
+            font-weight: 700;
+            transition: 0.3s;
+            margin-bottom: 15px;
+        }
+
+        .post-item .meta i {
+            font-size: 16px;
+            color: var(--color-primary);
+        }
+
+        .post-item .meta span {
+            font-size: 15px;
+            color: #838893;
+        }
+
+        .post-item hr {
+            color: #888;
+            margin: 20px 0;
+        }
+
+        .post-item .readmore {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            line-height: 1;
+            transition: 0.3s;
+            color: #838893;
+        }
+
+        .post-item .readmore i {
+            line-height: 0;
+            margin-left: 6px;
+            font-size: 16px;
+        }
+
+        .post-item:hover .post-title,
+        .post-item:hover .readmore {
+            color: var(--color-primary);
+        }
+
+        .post-item:hover .post-img img {
+            transform: scale(1.1);
+        }
+
+        .btn-get-started {
+            font-family: var(--font-primary);
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 1px;
+            display: inline-block;
+            padding: 12px 40px;
+            border-radius: 50px;
+            transition: 0.5s;
+            margin: 10px;
+            color: #000000;
+            border: 2px solid var(--color-primary);
+        }
+
+        .btn-get-started:hover {
+            background: var(--color-primary);
+        }
+
+        .service-item {
+            padding: 40px;
+            background: #fff;
+            height: 100%;
+        }
+
+        .service-item .icon {
+            width: 48px;
+            height: 48px;
+            position: relative;
+            margin-bottom: 50px;
+        }
+
+        .service-item .icon i {
+            color: #3385c6;
+            font-size: 40px;
+            transition: ease-in-out 0.3s;
+            z-index: 2;
+            position: relative;
+            line-height: 1.8;
+        }
+
+        .service-item .icon:before {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            background: #f0f1f2;
+            border-radius: 50px;
+            z-index: 1;
+            top: 10px;
+            right: -15px;
+            transition: 0.3s;
+        }
+
+        .service-item h3 {
+            color: var(--color-default);
+            font-weight: 700;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            font-size: 22px;
+            position: relative;
+            display: inline-block;
+            border-bottom: 4px solid #a0d2fa;
+            transition: 0.3s;
+        }
+
+        .service-item p {
+            line-height: 24px;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .service-item .readmore {
+            margin-top: 15px;
+            display: inline-block;
+            color: #3385c6;
+        }
+
+        .service-item:hover .icon:before {
+            background: #3385c6;
+        }
+
+        .service-item:hover h3 {
+            border-color: #3385c6;
+        }
+    </style>
+    <script>
+        var text = 'PT TRIKARYA BERKAH ABADI ';
+        var txt_innovation = '';
+        var chars = text.split('');
+        var chars_innovation = txt_innovation.split('');
+        var container = document.getElementById("typing");
+        var container_innovation = document.getElementById("typing-innovation");
+        var i = 0,
+            j = 0;
+        var added = 0;
+        setInterval(function() {
+            if (i < chars.length) {
+                container.innerHTML += chars[i++];
+            } else if (i == chars.length && j < chars_innovation.length) {
+                container_innovation.innerHTML += chars_innovation[j++];
+            } else {
+                i = 0;
+                j = 0;
+                container.innerHTML = ' ';
+                container_innovation.innerHTML = ' ';
+            }
+        }, 400);
+    </script>
 
 </body>
 
