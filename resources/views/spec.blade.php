@@ -94,12 +94,6 @@
                     <a class="nav-link page-scroll" href="/#division">DIVISION</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="/#services">PRODUCT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="/#applications">APPLICATION</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link page-scroll" href="/#contact">CONTACT</a>
                 </li>
             </ul>

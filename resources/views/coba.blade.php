@@ -167,12 +167,6 @@
                     <a class="nav-link page-scroll" href="#division">DIVISION</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#services">PRODUCT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#applications">APPLICATION</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link page-scroll" href="#contact">CONTACT</a>
                 </li>
             </ul>
@@ -210,12 +204,16 @@
                     <div class="text-container">
                         <div class="section-title">ABOUT</div>
                         <h2>We committed to provide good quality, good service and best delivery product</h2>
-                        <p>PT. Trikarya Berkah Abadi is located in Bekasi West Java. We were founded in 2023. We are a supplier of high-quality chemicals and raw materials serving a diverse range of industries. Our commitment to quality and customer satisfaction is what sets us apart from the competition.</p>
-                        <p>At our company, we understand that our customers have unique needs and requirements, which is why we offer a wide range of products that can be tailored to fit any application. Whether you need bulk quantities of raw materials or specialized chemicals for a specific process, we've got you covered.</p>
+                        <p>Welcome to our company!<br><br>
+                            PT. Trikarya Berkah Abadi is located in Bekasi West Java. We are doing business in the field of chemical distributor and information & technology.</p>
+                        <p>Our commitment to quality and customer satisfaction is what sets us apart from the competition.</p>
+                        <p>At our company, we understand that our customers have unique needs and requirements, which is why we offer a wide range of products that can be tailored to fit any application.</p>
+                        <p>You can explore our products and services below! Please do not hesitate to contact us if you have any specific requirements, as we are ready to meet your needs.
+                        </p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-7">
-                    <div class="image-container">
+                    <div class="image-container" style="box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); margin-top: 5vh;">
                         <img class="img-fluid" src="images/the-periodic-table-4273681_1920.jpg" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
@@ -225,63 +223,51 @@
     </div> <!-- end of basic-1 -->
     <!-- end of intro -->
 
-    <!-- Description -->
-    <div class="cards-1">
+    <div id="division" class="basic-1" style="background-color: #EEF5FF;">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
+            <div class="section-title text-center">OUR VISION</div>
+            <br>
+            <div class="row gy-4">
 
-                    <!-- Card -->
-                    <div class="card">
-                        <span class="fa-stack text-center">
-                            <img src="images/vision.svg" style="width: 100px; height:100px;"></img>
-                        </span>
-                        <div class="card-body">
-                            <h4 class="card-title">Our Vision</h4>
-                            <p>Become the leading chemical supplier and IT services provider in Indonesia.</p>
-                        </div>
+                <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-item position-relative text-center">
+                        <img src="images/vision.svg" style="width: 25%; height: auto;" class="img-fluid text-center">
+                        <br>
+                        <h3>Vision</h3>
+                        <p>Become the leading chemical supplier and IT services provider in Indonesia.</p>
                     </div>
-                    <!-- end of card -->
+                </div><!-- End Service Item -->
 
-                    <!-- Card -->
-                    <div class="card">
-                        <span class="fa-stack text-center">
-                            <img src="images/mission.svg" style="width: 100px; height:100px;"></img>
-                        </span>
-                        <div class="card-body">
-                            <h4 class="card-title">Our Mission</h4>
-                            <p>Become a reliable local chemical supplier and IT services provider in Indonesia.</p>
-                        </div>
+                <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-item position-relative text-center">
+                        <img src="images/mission.svg" style="width: 25%; height: auto;" class="img-fluid text-center">
+                        <br>
+                        <h3>Our Mission</h3>
+                        <p>Become a reliable local chemical supplier and IT services provider in Indonesia.</p>
                     </div>
-                    <!-- end of card -->
+                </div><!-- End Service Item -->
 
-                    <!-- Card -->
-                    <div class="card">
-                        <span class="fa-stack text-center">
-                            <img src="images/value.svg" style="width: 100px; height:100px;"></img>
-                        </span>
-                        <div class="card-body">
-                            <h4 class="card-title">Our Values</h4>
-                            <ul>
-                                <li>Safety & Wellness</li>
-                                <li>Honesty & Integrity</li>
-                                <li>Customer Focus</li>
-                                <li>Innovation</li>
-                                <li>Sustainability</li>
-                                <li>Respect</li>
-                            </ul>
-                        </div>
+                <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-item position-relative text-center">
+                        <img src="images/value.svg" style="width: 25%; height: auto;" class="img-fluid text-center">
+                        <br>
+                        <h3>Our Value</h3>
+                        <p>Safety & Wellness</p>
+                        <p>Honesty & Integrity</p>
+                        <p>Customer Focus</p>
+                        <p>Innovation</p>
+                        <p>Sustainability</p>
+                        <p>Respect</p>
                     </div>
-                    <!-- end of card -->
+                </div><!-- End Service Item -->
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of cards-1 -->
-    <!-- end of description -->
+            </div>
+        </div>
+    </div> <!-- end of container -->
+
 
     <!-- Intro -->
-    <div id="division" class="basic-1" style="background-color: #EEF5FF;">
+    <div id="division" class="basic-1" style="background-color: #ffffff;">
         <div class="container">
             <h2 class="section-title text-center">OUR DIVISION</h2>
             <h2 class="text-center">Select Our Product<br> That Meets Your Needs</h2>
@@ -289,20 +275,20 @@
             <div class="row gy-4">
 
                 <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-item position-relative text-center">
+                    <div class="service-item position-relative text-center" style="background-color: #EEF5FF;">
                         <img src="kimia.png" style="width: 25%; height: auto;" class="img-fluid text-center">
                         <br>
                         <h3>Chemical Division</h3>
-                        <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
-                        <a href="#" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
+                        <p>We are a leading chemical distributor company that specializes in sourcing and supplying high-quality chemicals to a wide range of industries. Recently we are main distributor of Copper sulphate and Ferrous Sulphate.</p>
+                        <a href="https://chemicals.trikaryaberkahabadi.com" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div><!-- End Service Item -->
 
                 <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-item position-relative text-center">
+                    <div class="service-item position-relative text-center" style="background-color: #EEF5FF;">
                         <img src="computer.png" style="width: 25%; height: auto;" class="img-fluid text-center">
                         <h3>Information Technology Division</h3>
-                        <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+                        <p>We also offer an IT services as your needs, such as mobile and web development, information system development, and many more.</p>
                         <a href="#" class="readmore stretched-link">Learn more <i class="bi bi-arrow-right"></i></a>
                     </div>
                 </div><!-- End Service Item -->
@@ -310,216 +296,11 @@
             </div>
         </div>
     </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
 
-    <!-- Intro -->
-    <div id="services" class="basic-1" style="background-color: #ffffff;">
-        <div class="container text-center">
-            <div class="section-title text-center">PRODUCTS</div>
-            <h2 class="text-center">Select Our Product<br> That Meets Your Needs</h2>
-            <div class="row">
-                @foreach($product as $p)
-                <div class="col-lg-3 col-md-6 mb-4 text-center">
-                    <div class="card">
-                        <div class="gambar-produk">
-                            <img class="card-img-top" src="{{asset($p->product_img)}}" class="img-fluid" alt="Card image cap">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title text-center"><a href="specs?id={{$p->product_id}}" style="color: #000000; text-decoration: none;">{{$p->product_name}}</a></h5>
-                        </div>
-                    </div>
-                </div> <!-- end of col -->
-                @endforeach
-            </div> <!-- end of row -->
-        </div>
-    </div> <!-- end of container -->
-
-    <!-- Services -->
-    {{--<div id="services" class="cards-2" style="background-color: #ffffff;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">PRODUCTS</div>
-                    <h2>Select Our Product<br> That Meets Your Needs</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-
-            <div class="row">
-                <p><b>Click the picture for more information.</b></p>
-                <br>
-                <div class="col-lg-12">
-                    @foreach($product as $p)
-                    <div class="card" style="width: 16rem;">
-                        <img class="card-img-top" src="{{asset($p->product_img)}}" class="img-fluid" alt="Card image cap">
-    <div class="card-body">
-        <h5 class="card-title"><a href="specs?id={{$p->product_id}}" style="color: #000000;">{{$p->product_name}}</a></h5>
-    </div>
-    </div>
-    @endforeach
-
-    </div> <!-- end of col -->
-    </div> <!-- end of row -->
-    </div> <!-- end of container -->
-    </div> <!-- end of cards-2 -->--}}
-    <!-- end of services -->
-
-    <!-- Testimonials -->
-    <div id="applications" class="slider" style="background-color: #EEF5FF;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="section-title">APPLICATION</h2>
-                    <br>
-                    <h3 class="p-heading">Our Product has extensive range of uses in industry as shown below</h3>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <h2 class="section-title">Copper Sulphate</h2>
-            <br>
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Card Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container card-slider">
-                            <div class="swiper-wrapper">
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img style="display: block; margin-left: auto; margin-right: auto; width: 170px; height: 170px;" src="images/poultry feed.jpg" alt="alternative">
-                                        <div class="card-body">
-                                            <div class="testimonial-author">Poultry Feed</div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img style="display: block; margin-left: auto; margin-right: auto; width: 170px; height: 170px;" src="images/copper-wire-113249_1920.jpg" alt="alternative">
-                                        <div class="card-body">
-                                            <div class="testimonial-author">Electroplating</div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img style="display: block; margin-left: auto; margin-right: auto; width: 170px; height: 170px;" src="images/Palm-oil-Indonesia-e1566559194709.jpg" alt="alternative">
-                                        <div class="card-body">
-                                            <div class="testimonial-author">Oil Palm Production</div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img style="display: block; margin-left: auto; margin-right: auto; width: 170px; height: 170px;" src="images/water-1018808_1920.jpg" alt="alternative">
-                                        <div class="card-body">
-                                            <div class="testimonial-author">Water purifier</div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-
-                            </div> <!-- end of swiper-wrapper -->
-
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <!-- end of add arrows -->
-
-                        </div> <!-- end of swiper-container -->
-                    </div> <!-- end of sliedr-container -->
-                    <!-- end of card slider -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <hr>
-            <h2 class="section-title">Ferrous Sulphate</h2>
-            <br>
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Card Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container card-slider">
-                            <div class="swiper-wrapper">
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img style="display: block; margin-left: auto; margin-right: auto; width: 170px; height: 170px;" src="{{asset('fertilizer.png')}}" alt="alternative">
-                                        <div class="card-body">
-                                            <div class="testimonial-author">Fertilizer</div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img style="display: block; margin-left: auto; margin-right: auto; width: 170px; height: 170px;" src="{{asset('batik.png')}}" alt="alternative">
-                                        <div class="card-body">
-                                            <div class="testimonial-author">Batik Colouring</div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img style="display: block; margin-left: auto; margin-right: auto; width: 170px; height: 170px;" src="{{asset('animal.png')}}" alt="alternative">
-                                        <div class="card-body">
-                                            <div class="testimonial-author">Animal Skin Tanning</div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img style="display: block; margin-left: auto; margin-right: auto; width: 170px; height: 170px;" src="{{asset('cement.png')}}" alt="alternative">
-                                        <div class="card-body">
-                                            <div class="testimonial-author">Reductor in Cement Industry</div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img style="display: block; margin-left: auto; margin-right: auto; width: 170px; height: 170px;" src="{{asset('chicken.png')}}" alt="alternative">
-                                        <div class="card-body">
-                                            <div class="testimonial-author">Poultry Feed</div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                            </div> <!-- end of swiper-wrapper -->
-
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <!-- end of add arrows -->
-
-                        </div> <!-- end of swiper-container -->
-                    </div> <!-- end of sliedr-container -->
-                    <!-- end of card slider -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of slider -->
     <!-- end of testimonials -->
 
     <!-- Contact -->
-    <div id="contact" class="form-2" style="background-color: #ffffff;">
+    <div id="contact" class="form-2" style="background-color: #EEF5FF;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -529,8 +310,8 @@
                         <p>We are happy to answer your sales question. Fill out the form and we'll be in touch as soon as possible.</p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="address"><i class="fas fa-map-marker-alt"></i>Villa Galaxy, Jalan Lotus Raya D2/7, Bekasi, West Java, Indonesia 17147</li>
-                            <li><i class="fas fa-phone"></i><a href="tel:0811890135">+62 811 890 135</a></li>
-                            <li><i class="fas fa-envelope"></i><a href="mailto:inquiry@trikaryaberkahabadi.com">inquiry@trikaryaberkahabadi.com</a></li>
+                            <i class="fas fa-phone"></i><a href="tel:62811890135">+62 811 890 135</a>
+                            <i class="fas fa-envelope"></i><a href="mailto:inquiry@trikaryaberkahabadi.com">inquiry@trikaryaberkahabadi.com</a>
                         </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
@@ -538,17 +319,17 @@
                     <form method="post" action="/contact_us">
                         {{ csrf_field() }}
                         <div class="form-group">
-                            <input type="text" name="name" class="form-control-input" id="name" value="" placeholder="Name" required />
+                            <input style="box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);" type="text" name="name" class="form-control-input" id="name" value="" placeholder="Name" required />
                         </div>
                         <div class="form-group">
-                            <input type="email" name="email" class="form-control-input" id="email" value="" placeholder="Email (required)" />
+                            <input style="box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);" type="email" name="email" class="form-control-input" id="email" value="" placeholder="Email (required)" />
                         </div>
                         <div class="form-group">
-                            <input type="text" name="phone_number" class="form-control-input" id="phone_number" value="" placeholder="Phone Number" />
+                            <input style="box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);" type="text" name="phone_number" class="form-control-input" id="phone_number" value="" placeholder="Phone Number" />
                         </div>
 
                         <div class="form-group">
-                            <textarea name="message" class="form-control-textarea" id="message" placeholder="Enter your message..."></textarea>
+                            <textarea style="box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);" name="message" class="form-control-textarea" id="message" placeholder="Enter your message..."></textarea>
                         </div>
 
                         <div class="form-group">
@@ -562,7 +343,6 @@
         </div> <!-- end of container -->
     </div> <!-- end of form-2 -->
     <!-- end of contact -->
-
 
     <!-- Footer -->
     {{--<div class="footer">
@@ -595,7 +375,7 @@
 
     <!-- Copyright -->
     <div class="copyright">
-        <div class="container" style="background-image: url(" gunung.jpg");">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <br>
@@ -784,6 +564,7 @@
             padding: 40px;
             background: #fff;
             height: 100%;
+            box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
         }
 
         .service-item .icon {
