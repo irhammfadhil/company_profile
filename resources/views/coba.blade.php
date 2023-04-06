@@ -146,7 +146,8 @@
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
 
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href=""><img src="{{asset('logo.png')}}" class="img-fluid" alt="alternative"></a>
+        <img src="{{asset('logo-only.png')}}" class="img-fluid gambar-hp" style="width: 10%; height: auto;" alt="alternative" media="(max-width: 800px)">
+        <img src="{{asset('logo.png')}}" class="img-fluid gambar-pc" style="width: 40%; height: auto;" alt="alternative" media="(min-width: 800px)">
 
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -229,7 +230,7 @@
             <br>
             <div class="row gy-4">
 
-                <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-4 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-item position-relative text-center">
                         <img src="images/vision.svg" style="width: 25%; height: auto;" class="img-fluid text-center">
                         <br>
@@ -238,7 +239,7 @@
                     </div>
                 </div><!-- End Service Item -->
 
-                <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-lg-4 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="service-item position-relative text-center">
                         <img src="images/mission.svg" style="width: 25%; height: auto;" class="img-fluid text-center">
                         <br>
@@ -247,7 +248,7 @@
                     </div>
                 </div><!-- End Service Item -->
 
-                <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-lg-4 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="service-item position-relative text-center">
                         <img src="images/value.svg" style="width: 25%; height: auto;" class="img-fluid text-center">
                         <br>
@@ -270,11 +271,10 @@
     <div id="division" class="basic-1" style="background-color: #ffffff;">
         <div class="container">
             <h2 class="section-title text-center">OUR DIVISION</h2>
-            <h2 class="text-center">Select Our Product<br> That Meets Your Needs</h2>
             <br>
             <div class="row gy-4">
 
-                <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-6 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-item position-relative text-center" style="background-color: #EEF5FF;">
                         <img src="kimia.png" style="width: 25%; height: auto;" class="img-fluid text-center">
                         <br>
@@ -284,7 +284,7 @@
                     </div>
                 </div><!-- End Service Item -->
 
-                <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-lg-6 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="service-item position-relative text-center" style="background-color: #EEF5FF;">
                         <img src="computer.png" style="width: 25%; height: auto;" class="img-fluid text-center">
                         <h3>Information Technology Division</h3>
@@ -402,6 +402,30 @@
     <script src="assets/hehe/js/scripts.js"></script> <!-- Custom scripts -->
 
     <style>
+        @media only screen and (max-width: 500px) {
+            .navbar-brand {
+                margin-right: -5rem;
+            }
+
+            .gambar-pc {
+                display: none;
+            }
+
+            .gambar-hp {
+                display: block;
+            }
+        }
+
+        @media only screen and (min-width: 500px) {
+            .gambar-pc {
+                display: block;
+            }
+
+            .gambar-hp {
+                display: none;
+            }
+        }
+
         .gambar-produk {
             overflow: hidden;
         }
@@ -564,7 +588,7 @@
             padding: 40px;
             background: #fff;
             height: 100%;
-            box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
         }
 
         .service-item .icon {

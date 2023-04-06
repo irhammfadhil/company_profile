@@ -52,7 +52,10 @@
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
 
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href=""><img src="{{asset('logo.png')}}" class="img-fluid" alt="alternative"></a>
+        <a class="navbar-brand logo-image" href="">
+            <img src="{{asset('logo-only.png')}}" class="img-fluid gambar-hp" alt="alternative" media="(max-width: 800px)">
+            <img src="{{asset('logo.png')}}" class="img-fluid gambar-pc" alt="alternative" media="(min-width: 800px)">
+        </a>
 
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -270,8 +273,8 @@
         </div> <!-- end of ex-basic-2 -->
         <!-- end of privacy content -->
 
-    <!-- Footer -->
-    {{--<div class="footer">
+        <!-- Footer -->
+        {{--<div class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -296,23 +299,23 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of footer -->--}}
-    <!-- end of footer -->
+        <!-- end of footer -->
 
 
-    <!-- Copyright -->
-    <div class="copyright">
-        <div class="container" style="background-image: url("gunung.jpg");">
-            <div class="row">
-                <div class="col-lg-12">
-                    <br>
-                    <img src="{{asset('logo.png')}}" class="img-fluid" style="width: 50%; height: auto;">
-                    <br><br>
-                    <p class="p-small">Copyright © {{date('Y')}} PT. Trikarya Berkah Abadi. All Rights Reserved</p>
-                    <br>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of copyright -->
+        <!-- Copyright -->
+        <div class="copyright">
+            <div class="container" style="background-image: url(" gunung.jpg");">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <br>
+                        <img src="{{asset('logo.png')}}" class="img-fluid" style="width: 50%; height: auto;">
+                        <br><br>
+                        <p class="p-small">Copyright © {{date('Y')}} PT. Trikarya Berkah Abadi. All Rights Reserved</p>
+                        <br>
+                    </div> <!-- end of col -->
+                </div> <!-- enf of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of copyright -->
         <!-- end of copyright -->
 
 
@@ -327,6 +330,31 @@
         <script src="assets/hehe/js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
         <script src="assets/hehe/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
         <script src="assets/hehe/js/scripts.js"></script> <!-- Custom scripts -->
+        <style>
+            @media only screen and (max-width: 500px) {
+                .navbar-brand {
+                    margin-right: -5rem;
+                }
+
+                .gambar-pc {
+                    display: none;
+                }
+
+                .gambar-hp {
+                    display: block;
+                }
+            }
+
+            @media only screen and (min-width: 500px) {
+                .gambar-pc {
+                    display: block;
+                }
+
+                .gambar-hp {
+                    display: none;
+                }
+            }
+        </style>
 
 </body>
 
